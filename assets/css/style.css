@@ -19,13 +19,39 @@ body{
 
 
 header {
-    background-color:red
+    background-color:red;
+    font-size:15px
+}
+
+.logo{
+
+}
+
+h1 {
+    font-family: 'Public sans' , open-sans;
+}
+
+.headers{
+    text-align:center;
+    font-size:20px;
+    text-wrap:wrap;
 }
 
 main {
     background-color: green;
     flex:1 0 auto;
 
+}
+
+.paragraphs{
+    text-align:center;
+    font-size:15px;
+   
+}
+
+.form {
+    width:100vh;
+    margin:auto
 }
 
 footer {
