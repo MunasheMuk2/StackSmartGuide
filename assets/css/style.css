@@ -1,3 +1,6 @@
+/* Google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
 /*Wildcard selector to change browser default styles */
 
 *{
@@ -7,6 +10,13 @@
 
 }
 
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction:column;
+    
+}
+
 
 header {
     background-color:red
@@ -14,7 +24,8 @@ header {
 
 main {
     background-color: green;
-    min-height: 100vh
+    flex:1 0 auto;
+   
 
 }
 
