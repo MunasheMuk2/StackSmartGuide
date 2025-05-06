@@ -54,6 +54,13 @@ main {
     margin:auto
 }
 
+button {
+    margin:50px;
+    background-color:lightblue;
+    padding:5px;
+   
+}
+
 footer {
     
 }
