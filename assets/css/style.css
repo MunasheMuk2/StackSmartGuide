@@ -19,7 +19,7 @@ body{
 
 
 header {
-    background-color:red;
+    
     font-size:15px
 }
 
@@ -38,7 +38,7 @@ h1 {
 }
 
 main {
-    background-color: green;
+   
     flex:1 0 auto;
 
 }
@@ -55,5 +55,5 @@ main {
 }
 
 footer {
-    background-color: blue
+    
 }
