@@ -42,37 +42,34 @@
         <h2 class="headers">Pallet Data </h2>
         <p class="paragraphs"> Dimensions in mm - vehicle recommendation based on stackable pallets </p>
 
-        <form class="form">
+        <div class="palletCalculator">
 
-            <select class="form-select" aria-label="Default select example">
-                <option selected>Select pallet size</option>
-                <option value="1">Europallet 1200 x 800</option>
-                <option value="2">Industrie 1200 x 1000 </option>
-                <option value="3">half pallet 800 x 600 </option>
+            <label for="palletNumber">Number of pallets:</label>
+            <input type="number" id="palletNumber">
+
+            <label for="loadingHeight">Loading Height (cm):</label>
+            <input type="number" id="loadingHeight">
+
+            <label for="loadingWeight">Loading Weight (kg):</label>
+            <input type="number" id="loadingWeight">
+
+            <label for="palletType">Select Pallet Type:</label>
+            <select id="palletType">
+                <option value="120x80">120 x 80 cm</option>
+                <option value="120x100">120 x 100 cm</option>
             </select>
 
-            <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label">Loading Height</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="height in mm">
-            </div>
-
-            <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label">Total Load Weight</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="weight in kgs">
-            </div>
-
-            <div class="mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label">Vehicle recommendation</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-            </div>
-
-            <button> Calculate </button>
-            <button> Reset </button>
 
 
 
 
-        </form>
+
+
+        </div>
+
+
+
+
 
 
 
