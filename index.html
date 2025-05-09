@@ -44,23 +44,25 @@
 
         <div class="palletCalculator">
 
-            <label for="palletNumber">Number of pallets:</label>
-            <input type="number" id="palletNumber">
+            <label>Number of pallets:</label>
+            <input onchange="calculatePallets()" type="number" id="palletNumber">
 
-            <label for="loadingHeight">Loading Height (cm):</label>
-            <input type="number" id="loadingHeight">
+            <label>Loading Height (cm):</label>
+            <input onchange="calculatePallets()" type="number" id="loadingHeight">
 
-            <label for="loadingWeight">Loading Weight (kg):</label>
-            <input type="number" id="loadingWeight">
+            <label> Weight per pallet (kg):</label>
+            <input onchange="calculatePallets()" type="number" id="loadingWeight">
 
-            <label for="palletType">Select Pallet Type:</label>
-            <select id="palletType">
-                <option value="120x80">120 x 80 cm</option>
-                <option value="120x100">120 x 100 cm</option>
+            <label>Select Pallet Type:</label>
+            <select id="palletType" onchange="calculatePallets()" type="number">
+                <option value=120*80>120 x 80 cm</option>
+                <option value=120*100>120 x 100 cm</option>
             </select>
             <br>
 
             <button id="calculatePallet">Caculate </button>
+
+            <p id="total">Total will be logged here</p>
 
         </div>
 
@@ -79,11 +81,11 @@
         integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous">
     </script>
 
-    <script src="assets/js/script.js"></script>
-
 
     <!-- Fontawesome-->
     <script src="https://kit.fontawesome.com/a08d6427c7.js" crossorigin="anonymous"></script>
+
+    <script src="assets/js/script.js"></script>
 
 </body>
 
