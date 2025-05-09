@@ -44,6 +44,8 @@ function calculateTotal() {
     totalOutput.innerHTML = euroDimensions
 
 
+    // Calculations for euro pallets 
+
 
     // let smallVan;
 
@@ -60,11 +62,66 @@ function calculateTotal() {
     }
 
 
+    //Long Wheel Base
+
+    if (euroDimensions <= 9770 && palletsWeight <= 1400) {
+
+        vehicle.innerHTML = "Long Wheel Base"
+    }
+
+    //Sprinter van
+
+    if (euroDimensions <= 9775 && palletsWeight <= 1250) {
+
+        vehicle.innerHTML = "Sprinter van"
+    }
+
+    //Luton van
+
+    if (euroDimensions <= 9785 && palletsWeight <= 1000) {
+
+        vehicle.innerHTML = "Luton van"
+    }
+
+    //7 & a half Tonne
+
+    if (euroDimensions <= 9830 && palletsWeight <= 3000) {
+
+        vehicle.innerHTML = "7 & a half tonne truck"
+    }
+
+    //18 Tonne
+
+    if (euroDimensions <= 9850 && palletsWeight <= 9000) {
+
+        vehicle.innerHTML = "18 Tonne"
+    }
+
+    //26 Tonne
+
+    if (euroDimensions <= 9840 && palletsWeight <= 15000) {
+
+        vehicle.innerHTML = "26 Tonne"
+    }
+
+    //Artic
+
+    if (euroDimensions <= 9870 && palletsWeight <= 24000) {
+
+        vehicle.innerHTML = "Artic"
+    }
+
+    //Megatrailer
+
+    if (euroDimensions <= 9900 && palletsWeight <= 24000) {
+
+        vehicle.innerHTML = "Artic"
+    }
+
+    // Calculations for industrial pallets 
+
 
 };
-
-
-
 
 
 
