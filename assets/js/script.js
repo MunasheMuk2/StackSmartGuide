@@ -52,6 +52,14 @@ function calculateTotal() {
         vehicle.innerHTML = "Small Van"
     }
 
+    //Short Wheel Base
+
+    if (euroDimensions <= 9730 && palletsWeight <= 1000) {
+
+        vehicle.innerHTML = "Short Wheel Base"
+    }
+
+
 
 };
 
