@@ -14,10 +14,14 @@ function calculatePallets() {
 
     const loadingHeightInput = document.getElementById('loadingHeight').value;
     const euroPallet = document.querySelector('#euro').value = 120 * 80;
+    const industrialPallet = document.querySelector('#industrial').value = 120 * 100;
 
-    palletsDimensions = parseInt(euroPallet) * parseInt(loadingHeightInput)
+    euroDimensions = parseInt(euroPallet) * parseInt(loadingHeightInput)
+    industrialDimensions = parseInt(industrialPallet) * parseInt(loadingHeightInput)
 
-    console.log(palletsDimensions)
+
+
+
 
 }
 
