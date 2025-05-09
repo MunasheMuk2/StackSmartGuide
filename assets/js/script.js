@@ -1,4 +1,7 @@
 const calculateResult = document.getElementById("calculatePallet");
+const totalOutput = document.getElementById('total');
+const vehicle = document.getElementById('vanOutput');
+
 
 
 // const palletNumberInput = document.getElementById('palletNumber').value;
@@ -23,6 +26,8 @@ function calculatePallets() {
 
 }
 
+calculateResult.addEventListener("click", calculateTotal)
+
 function calculateTotal() {
     const palletNumberInput = document.getElementById('palletNumber').value;
     const loadingWeightInput = document.getElementById('loadingWeight').value;
@@ -36,8 +41,26 @@ function calculateTotal() {
     euroDimensions = parseInt(euroPallet) + parseInt(loadingHeightInput)
     industrialDimensions = parseInt(industrialPallet) + parseInt(loadingHeightInput)
 
-    console.log(euroDimensions)
+    totalOutput.innerHTML = euroDimensions
+
+
+
+    // let smallVan;
+
+    if (euroDimensions <= 9710 && palletsWeight <= 400) {
+
+        vehicle.innerHTML = "Small Van"
+    }
+
+
 };
 
 
-calculateResult.addEventListener("click", calculateTotal)
+
+
+
+
+function refresh() {
+    document.getElementById("palletCalculator").reset();
+
+}
