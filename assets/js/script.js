@@ -56,7 +56,7 @@ function calculateTotal() {
 
     //Short Wheel Base
 
-    if (euroDimensions <= 9730 && palletsWeight <= 1000) {
+    if (euroDimensions <= 9730 && palletsWeight >= 401 && palletsWeight <= 1000) {
 
         vehicle.innerHTML = "Short Wheel Base"
     }
@@ -64,58 +64,58 @@ function calculateTotal() {
 
     //Long Wheel Base
 
-    if (euroDimensions <= 9770 && palletsWeight <= 1400) {
+    if (euroDimensions <= 9770 && palletsWeight >= 1001 && palletsWeight <= 1400) {
 
         vehicle.innerHTML = "Long Wheel Base"
     }
 
     //Sprinter van
 
-    if (euroDimensions <= 9775 && palletsWeight <= 1250) {
+    if (euroDimensions <= 9775 && palletsWeight >= 1001 && palletsWeight <= 1250) {
 
         vehicle.innerHTML = "Sprinter van"
     }
 
     //Luton van
 
-    if (euroDimensions <= 9785 && palletsWeight <= 1000) {
+    if (euroDimensions <= 9785 && palletsWeight >= 401 && palletsWeight <= 1000) {
 
         vehicle.innerHTML = "Luton van"
     }
 
     //7 & a half Tonne
 
-    if (euroDimensions <= 9830 && palletsWeight <= 3000) {
+    if (euroDimensions <= 9830 && palletsWeight >= 1401 && palletsWeight <= 3000) {
 
         vehicle.innerHTML = "7 & a half tonne truck"
     }
 
     //18 Tonne
 
-    if (euroDimensions <= 9850 && palletsWeight <= 9000) {
+    if (euroDimensions <= 9850 && palletsWeight >= 3001 && palletsWeight <= 9000) {
 
         vehicle.innerHTML = "18 Tonne"
     }
 
     //26 Tonne
 
-    if (euroDimensions <= 9840 && palletsWeight <= 15000) {
+    if (euroDimensions <= 9840 && palletsWeight >= 9001 && palletsWeight <= 15000) {
 
         vehicle.innerHTML = "26 Tonne"
     }
 
     //Artic
 
-    if (euroDimensions <= 9870 && palletsWeight <= 24000) {
+    if (euroDimensions <= 9870 && palletsWeight >= 15001 && palletsWeight <= 24000) {
 
         vehicle.innerHTML = "Artic"
     }
 
     //Megatrailer
 
-    if (euroDimensions <= 9900 && palletsWeight <= 24000) {
+    if (euroDimensions <= 9900 && palletsWeight >= 15001 && palletsWeight <= 24000) {
 
-        vehicle.innerHTML = "Artic"
+        vehicle.innerHTML = "Megatrailer"
     }
 
     // Calculations for industrial pallets 
