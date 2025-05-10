@@ -116,6 +116,8 @@ function calculateTotal() {
     if (euroDimensions <= 9900 && palletsWeight >= 15001 && palletsWeight <= 24000) {
 
         vehicle.innerHTML = "Megatrailer"
+    } else {
+        vehicle.innerHTML = "Load may require multiple vehicles please check"
     }
 
     // Calculations for industrial pallets 
