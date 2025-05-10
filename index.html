@@ -45,13 +45,13 @@
         <div class="palletCalculator">
 
             <label>Number of pallets:</label>
-            <input onchange="calculatePallets()" type="number" id="palletNumber">
+            <input onchange="calculatePallets()" type="number" id="palletNumber" min="1" max="26">
 
             <label>Loading Height (cm):</label>
-            <input onchange="calculatePallets()" type="number" id="loadingHeight">
+            <input onchange="calculatePallets()" type="number" id="loadingHeight" min="1" max="300">
 
             <label> Weight per pallet (kg):</label>
-            <input onchange="calculatePallets()" type="number" id="loadingWeight">
+            <input onchange="calculatePallets()" type="number" id="loadingWeight" min="1" max="24000">
 
             <label>Select Pallet Type:</label>
             <select id="palletType" onchange="calculatePallets()" type="number">
