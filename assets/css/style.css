@@ -14,7 +14,9 @@ body{
     min-height: 100vh;
     display: flex;
     flex-direction:column;
-    font-family: 'Open sans', public-sans
+    font-family: 'Open sans', public-sans;
+    background-image: url("assets\images\pallet.jpg");
+
 }
 
 
