@@ -2,14 +2,14 @@ const calculateResult = document.getElementById("calculatePallet");
 const totalOutput = document.getElementById('total');
 const vehicle = document.getElementById('vanOutput');
 
+//Event listner added to calculate button as user inputs all details and clicks calculate to get recommended vehicle
 
 calculateResult.addEventListener("click", calculateTotal)
 
 function calculateTotal() {
     const palletNumberInput = document.getElementById('palletNumber').value;
     const loadingWeightInput = document.getElementById('loadingWeight').value;
-
-    palletsWeight = palletNumberInput * loadingWeightInput
+    const palletsWeight = palletNumberInput * loadingWeightInput
 
     const length = 120;
     const width = 80;
@@ -71,10 +71,8 @@ function calculateTotal() {
     };
 
 
-
-
     const palletHeightInput = document.getElementById('loadingHeight').value;
-    const euroPallet = document.querySelector('#euro').value = length * width;
+    const euroPallet = document.querySelector('#euro').value = 120 * 80;
     const industrialPallet = document.querySelector('#industrial').value = 120 * 100;
 
 
@@ -90,9 +88,6 @@ function calculateTotal() {
 
     // Pallet dimensions set between values to ensure the vehicle recommandation is based on the smallest vehicle that can take the goods
     // let smallVan;
-
-
-
 
     if (euroDimensions <= 1056000 && palletsWeight <= vehicleLimits.smallVan.maxWeight &&
         palletHeightInput <= vehicleLimits.smallVan.maxHeight &&
