@@ -30,11 +30,19 @@ function calculateTotal() {
             maxWeight: 1400,
             maxPallets: 6
         },
+
+        sprinterVan: {
+            maxHeight: 175,
+            maxWeight: 1250,
+            maxPallets: 4
+        },
+
         lutonVan: {
             maxHeight: 185,
             maxWeight: 1000,
             maxPallets: 8
         },
+
         sevenHalfTonne: {
             maxHeight: 230,
             maxWeight: 3000,
@@ -91,11 +99,22 @@ function calculateTotal() {
         palletNumberInput <= vehicleLimits.smallVan.maxPallets) {
 
         vehicle.innerHTML = "Small Van"
+    } else if (euroDimensions <= 1248000 && palletsWeight <= vehicleLimits.shortWheelBase.maxWeight &&
+        palletHeightInput <= vehicleLimits.shortWheelBase.maxHeight &&
+        palletNumberInput <= vehicleLimits.shortWheelBase.maxPallets) {
+        vehicle.innerHTML = "Short Wheel Base"
     }
+
+
+
+
+
 
     // //Short Wheel Base
 
-    // if (euroDimensions <= 1248000 && palletsWeight <= 1000 && palletHeightInput <= vehicleHeights.shortWheelBase) {
+    // if (euroDimensions <= 1248000 && palletsWeight <= vehicleLimits.shortWheelBase.maxWeight &&
+    //     palletHeightInput <= vehicleLimits.shortWheelBase.maxHeight &&
+    //     palletNumberInput <= vehicleLimits.shortWheelBase.maxPallets) {
 
     //     vehicle.innerHTML = "Short Wheel Base"
     // }
@@ -103,14 +122,18 @@ function calculateTotal() {
 
     // //Long Wheel Base
 
-    // if (euroDimensions >= 1248001 && euroDimensions <= 1632000 && palletsWeight <= 1400 && palletHeightInput <= vehicleHeights.longWheelBase) {
+    // if (euroDimensions >= 1248001 && palletsWeight <= vehicleLimits.longWheelBase.maxWeight &&
+    //     palletHeightInput <= vehicleLimits.longWheelBase.maxHeight &&
+    //     palletNumberInput <= vehicleLimits.longWheelBase.maxPallets) {
 
     //     vehicle.innerHTML = "Long Wheel Base"
     // }
 
     // //Sprinter van
 
-    // if (euroDimensions >= 1632001 && euroDimensions <= 1680000 && palletsWeight <= 1250 && palletHeightInput <= vehicleHeights.lutonVan) {
+    // if (euroDimensions >= 1632001 && euroDimensions <= 1680000 && palletsWeight <= vehicleLimits.smallVan.maxWeight &&
+    //     palletHeightInput <= vehicleLimits.smallVan.maxHeight &&
+    //     palletNumberInput <= vehicleLimits.smallVan.maxPallets) {
 
     //     vehicle.innerHTML = "Sprinter van"
     // }
@@ -118,42 +141,54 @@ function calculateTotal() {
 
     // //Luton van
 
-    // if (euroDimensions >= 1680001 && euroDimensions <= 1776000 && palletsWeight <= 1000 && palletHeightInput <= vehicleHeights.lutonVan) {
+    // if (euroDimensions >= 1680001 && euroDimensions <= 1776000 && palletsWeight <= vehicleLimits.lutonVan.maxWeight &&
+    //     palletHeightInput <= vehicleLimits.lutonVan.maxHeight &&
+    //     palletNumberInput <= vehicleLimits.lutonVan.maxPallets) {
 
     //     vehicle.innerHTML = "Luton van"
     // }
 
     // //7 & a half Tonne
 
-    // if (euroDimensions >= 1776001 && euroDimensions <= 22080000 && palletHeightInput <= vehicleHeights.sevenHalfTonne) {
+    // if (euroDimensions >= 1776001 && euroDimensions <= 22080000 && palletsWeight <= vehicleLimits.sevenHalfTonne.maxWeight &&
+    //     palletHeightInput <= vehicleLimits.sevenHalfTonne.maxHeight &&
+    //     palletNumberInput <= vehicleLimits.sevenHalfTonne.maxPallets) {
 
     //     vehicle.innerHTML = "7 & a half tonne truck"
     // }
 
     // //18 Tonne
 
-    // if (euroDimensions >= 22080001 && euroDimensions <= 24000000 <= 137900 && palletsWeight >= 3001 && palletsWeight <= 9000 && palletHeightInput <= vehicleHeights.eighteenTonne) {
+    // if (euroDimensions <= 24000000 <= 137900 && palletsWeight <= vehicleLimits.eighteenTonne.maxWeight &&
+    //     palletHeightInput <= vehicleLimits.eighteenTonne.maxHeight &&
+    //     palletNumberInput <= vehicleLimits.eighteenTonne.maxPallets) {
 
     //     vehicle.innerHTML = "18 Tonne"
     // }
 
     // //26 Tonne
 
-    // if (euroDimensions >= 24000001 && euroDimensions <= 2304000 && palletsWeight >= 9001 && palletsWeight <= 15000 && palletHeightInput <= vehicleHeights.twentySixTonne) {
+    // if (euroDimensions >= 24000001 && euroDimensions <= 2304000 && palletsWeight <= vehicleLimits.twentySixTonne.maxWeight &&
+    //     palletHeightInput <= vehicleLimits.twentySixTonne.maxHeight &&
+    //     palletNumberInput <= vehicleLimits.twentySixTonne.maxPallets) {
 
     //     vehicle.innerHTML = "26 Tonne"
     // }
 
     // //Artic
 
-    // if (euroDimensions <= 2592000 && palletsWeight >= 15001 && palletsWeight <= 24000 && palletHeightInput <= vehicleHeights.artic) {
+    // if (euroDimensions >= 22080000 && euroDimensions <= 2592000 && palletsWeight <= vehicleLimits.artic.maxWeight &&
+    //     palletHeightInput <= vehicleLimits.artic.maxHeight &&
+    //     palletNumberInput <= vehicleLimits.artic.maxPallets) {
 
     //     vehicle.innerHTML = "Artic"
     // }
 
     // //Megatrailer
 
-    // if (euroDimensions >= 2400000 && euroDimensions <= 2880000 && palletsWeight >= 15001 && palletsWeight <= 24000 && palletHeightInput <= vehicleHeights.megatrailer) {
+    // if (euroDimensions >= 2400000 && euroDimensions <= 2880000 && palletsWeight <= vehicleLimits.megatrailer.maxWeight &&
+    //     palletHeightInput <= vehicleLimits.megatrailer.maxHeight &&
+    //     palletNumberInput <= vehicleLimits.megatrailer.maxPallets) {
 
     //     vehicle.innerHTML = "Megatrailer"
     // }
