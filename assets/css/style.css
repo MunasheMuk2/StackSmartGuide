@@ -60,12 +60,14 @@ main {
     margin: auto;
 }
 
-button {
-    margin:50px;
-    background-color:lightblue;
+#calculatePallet {
+    background-color:#2289e6;
     padding:5px;
+    width:250px;
+    margin:auto;
+    margin-bottom:7px
 }
 
 footer {
-    
+    border-top: 1.5px solid #2289e6;
 }
