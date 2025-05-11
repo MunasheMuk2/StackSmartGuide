@@ -21,7 +21,7 @@ function calculateTotal() {
     euroDimensions = Math.floor(parseInt(euroPallet) * parseInt(palletHeightInput))
     industrialDimensions = parseInt(industrialPallet) + parseInt(palletHeightInput);
 
-    totalOutput.innerHTML = euroDimensions
+    totalOutput.innerHTML = industrialDimensions
 
     //Object to store vehicle height and weight capacity and also the total number of pallets that can be loaded if pallets are non stackable. 
 
@@ -177,9 +177,10 @@ function calculateTotal() {
 
 };
 
-
+const refreshBtn = document.getElementById('btnRefresh');
 
 function refresh() {
-    document.getElementById("palletCalculator").reset();
-
+    history.go(0);
 }
+
+refreshBtn.addEventListener('onclick', refresh)

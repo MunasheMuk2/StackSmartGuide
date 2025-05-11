@@ -38,7 +38,7 @@ h1 {
 }
 
 main {
-   
+
     flex:1 0 auto;
 
 }
@@ -46,7 +46,6 @@ main {
 .paragraphs{
     text-align:center;
     font-size:15px;
-   
 }
 
 .form {
@@ -54,11 +53,17 @@ main {
     margin:auto
 }
 
+.palletCalculator {
+    display: flex;
+    flex-direction:column;
+    width: 300px;
+    margin: auto;
+}
+
 button {
     margin:50px;
     background-color:lightblue;
     padding:5px;
-   
 }
 
 footer {
