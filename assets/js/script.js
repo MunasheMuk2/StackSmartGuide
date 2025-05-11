@@ -18,17 +18,17 @@ function calculateTotal() {
         smallVan: {
             maxHeight: 110,
             maxWeight: 400,
-            maxPallets: 2
+            maxPallets: 1
         },
         shortWheelBase: {
             maxHeight: 130,
             maxWeight: 1000,
-            maxPallets: 4
+            maxPallets: 2
         },
         longWheelBase: {
             maxHeight: 170,
             maxWeight: 1400,
-            maxPallets: 6
+            maxPallets: 3
         },
 
         sprinterVan: {
@@ -40,7 +40,7 @@ function calculateTotal() {
         lutonVan: {
             maxHeight: 185,
             maxWeight: 1000,
-            maxPallets: 8
+            maxPallets: 4
         },
 
         sevenHalfTonne: {
@@ -56,7 +56,7 @@ function calculateTotal() {
         twentySixTonne: {
             maxHeight: 240,
             maxWeight: 15000,
-            maxPallets: 18
+            maxPallets: 14
         },
         artic: {
             maxHeight: 270,
@@ -97,101 +97,49 @@ function calculateTotal() {
     if (euroDimensions <= 1056000 && palletsWeight <= vehicleLimits.smallVan.maxWeight &&
         palletHeightInput <= vehicleLimits.smallVan.maxHeight &&
         palletNumberInput <= vehicleLimits.smallVan.maxPallets) {
-
         vehicle.innerHTML = "Small Van"
     } else if (euroDimensions <= 1248000 && palletsWeight <= vehicleLimits.shortWheelBase.maxWeight &&
         palletHeightInput <= vehicleLimits.shortWheelBase.maxHeight &&
         palletNumberInput <= vehicleLimits.shortWheelBase.maxPallets) {
         vehicle.innerHTML = "Short Wheel Base"
+    } else if (euroDimensions <= 1248000 && palletsWeight <= vehicleLimits.shortWheelBase.maxWeight &&
+        palletHeightInput <= vehicleLimits.shortWheelBase.maxHeight &&
+        palletNumberInput <= vehicleLimits.shortWheelBase.maxPallets) {
+        vehicle.innerHTML = "Short Wheel Base"
+    } else if (euroDimensions <= 1248001 && palletsWeight <= vehicleLimits.longWheelBase.maxWeight &&
+        palletHeightInput <= vehicleLimits.longWheelBase.maxHeight &&
+        palletNumberInput <= vehicleLimits.longWheelBase.maxPallets) {
+        vehicle.innerHTML = "Long Wheel Base"
+    } else if (euroDimensions <= 1680000 && palletsWeight <= vehicleLimits.smallVan.maxWeight &&
+        palletHeightInput <= vehicleLimits.smallVan.maxHeight &&
+        palletNumberInput <= vehicleLimits.smallVan.maxPallets) {
+        vehicle.innerHTML = "Sprinter van"
+    } else if (euroDimensions <= 1776000 && palletsWeight <= vehicleLimits.lutonVan.maxWeight &&
+        palletHeightInput <= vehicleLimits.lutonVan.maxHeight &&
+        palletNumberInput <= vehicleLimits.lutonVan.maxPallets) {
+        vehicle.innerHTML = "Luton van"
+    } else if (euroDimensions <= 22080000 && palletsWeight <= vehicleLimits.sevenHalfTonne.maxWeight &&
+        palletHeightInput <= vehicleLimits.sevenHalfTonne.maxHeight &&
+        palletNumberInput <= vehicleLimits.sevenHalfTonne.maxPallets) {
+        vehicle.innerHTML = "7 & a half tonne truck"
+    } else if (euroDimensions <= 24000000 && palletsWeight <= vehicleLimits.eighteenTonne.maxWeight &&
+        palletHeightInput <= vehicleLimits.eighteenTonne.maxHeight &&
+        palletNumberInput <= vehicleLimits.eighteenTonne.maxPallets) {
+        vehicle.innerHTML = "18 Tonne"
+    } else if (euroDimensions >= 24000001 && euroDimensions <= 2304000 && palletsWeight <= vehicleLimits.twentySixTonne.maxWeight &&
+        palletHeightInput <= vehicleLimits.twentySixTonne.maxHeight &&
+        palletNumberInput <= vehicleLimits.twentySixTonne.maxPallets) {
+        vehicle.innerHTML = "26 Tonne"
+    } else if (euroDimensions <= 2592000 && palletsWeight <= vehicleLimits.artic.maxWeight &&
+        palletHeightInput <= vehicleLimits.artic.maxHeight &&
+        palletNumberInput <= vehicleLimits.artic.maxPallets) {
+        vehicle.innerHTML = "Artic"
+    } else if (euroDimensions >= 2400000 && euroDimensions <= 2880000 && palletsWeight <= vehicleLimits.megatrailer.maxWeight &&
+        palletHeightInput <= vehicleLimits.megatrailer.maxHeight &&
+        palletNumberInput <= vehicleLimits.megatrailer.maxPallets) {
+        vehicle.innerHTML = "Megatrailer"
     }
 
-
-
-
-
-
-    // //Short Wheel Base
-
-    // if (euroDimensions <= 1248000 && palletsWeight <= vehicleLimits.shortWheelBase.maxWeight &&
-    //     palletHeightInput <= vehicleLimits.shortWheelBase.maxHeight &&
-    //     palletNumberInput <= vehicleLimits.shortWheelBase.maxPallets) {
-
-    //     vehicle.innerHTML = "Short Wheel Base"
-    // }
-
-
-    // //Long Wheel Base
-
-    // if (euroDimensions >= 1248001 && palletsWeight <= vehicleLimits.longWheelBase.maxWeight &&
-    //     palletHeightInput <= vehicleLimits.longWheelBase.maxHeight &&
-    //     palletNumberInput <= vehicleLimits.longWheelBase.maxPallets) {
-
-    //     vehicle.innerHTML = "Long Wheel Base"
-    // }
-
-    // //Sprinter van
-
-    // if (euroDimensions >= 1632001 && euroDimensions <= 1680000 && palletsWeight <= vehicleLimits.smallVan.maxWeight &&
-    //     palletHeightInput <= vehicleLimits.smallVan.maxHeight &&
-    //     palletNumberInput <= vehicleLimits.smallVan.maxPallets) {
-
-    //     vehicle.innerHTML = "Sprinter van"
-    // }
-
-
-    // //Luton van
-
-    // if (euroDimensions >= 1680001 && euroDimensions <= 1776000 && palletsWeight <= vehicleLimits.lutonVan.maxWeight &&
-    //     palletHeightInput <= vehicleLimits.lutonVan.maxHeight &&
-    //     palletNumberInput <= vehicleLimits.lutonVan.maxPallets) {
-
-    //     vehicle.innerHTML = "Luton van"
-    // }
-
-    // //7 & a half Tonne
-
-    // if (euroDimensions >= 1776001 && euroDimensions <= 22080000 && palletsWeight <= vehicleLimits.sevenHalfTonne.maxWeight &&
-    //     palletHeightInput <= vehicleLimits.sevenHalfTonne.maxHeight &&
-    //     palletNumberInput <= vehicleLimits.sevenHalfTonne.maxPallets) {
-
-    //     vehicle.innerHTML = "7 & a half tonne truck"
-    // }
-
-    // //18 Tonne
-
-    // if (euroDimensions <= 24000000 <= 137900 && palletsWeight <= vehicleLimits.eighteenTonne.maxWeight &&
-    //     palletHeightInput <= vehicleLimits.eighteenTonne.maxHeight &&
-    //     palletNumberInput <= vehicleLimits.eighteenTonne.maxPallets) {
-
-    //     vehicle.innerHTML = "18 Tonne"
-    // }
-
-    // //26 Tonne
-
-    // if (euroDimensions >= 24000001 && euroDimensions <= 2304000 && palletsWeight <= vehicleLimits.twentySixTonne.maxWeight &&
-    //     palletHeightInput <= vehicleLimits.twentySixTonne.maxHeight &&
-    //     palletNumberInput <= vehicleLimits.twentySixTonne.maxPallets) {
-
-    //     vehicle.innerHTML = "26 Tonne"
-    // }
-
-    // //Artic
-
-    // if (euroDimensions >= 22080000 && euroDimensions <= 2592000 && palletsWeight <= vehicleLimits.artic.maxWeight &&
-    //     palletHeightInput <= vehicleLimits.artic.maxHeight &&
-    //     palletNumberInput <= vehicleLimits.artic.maxPallets) {
-
-    //     vehicle.innerHTML = "Artic"
-    // }
-
-    // //Megatrailer
-
-    // if (euroDimensions >= 2400000 && euroDimensions <= 2880000 && palletsWeight <= vehicleLimits.megatrailer.maxWeight &&
-    //     palletHeightInput <= vehicleLimits.megatrailer.maxHeight &&
-    //     palletNumberInput <= vehicleLimits.megatrailer.maxPallets) {
-
-    //     vehicle.innerHTML = "Megatrailer"
-    // }
 
     // // Calculations for industrial pallets 
     // // let smallVan;
