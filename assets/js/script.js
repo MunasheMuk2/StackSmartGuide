@@ -183,4 +183,4 @@ function refresh() {
     history.go(0);
 }
 
-refreshBtn.addEventListener('onclick', refresh)
+refreshBtn.addEventListener('onclick', refresh);
