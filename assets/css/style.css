@@ -88,10 +88,11 @@ main {
     }
 
 #vanOutput {
-    border: 2px solid orange;
+    border: 1px solid black;
 }
 
 footer {
-    border-top: 1.5px solid #2289e6;
+    /* border-top: 1.5px solid black; */
+    background-color:#2289e6
     
 }
