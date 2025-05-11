@@ -7,15 +7,16 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
-
 }
 
 body{
+
     min-height: 100vh;
     display: flex;
     flex-direction:column;
     font-family: 'Open sans', public-sans;
-    background-image: url("assets\images\pallet.jpg");
+    
+
 
 }
 
@@ -26,7 +27,11 @@ header {
 }
 
 .logo{
+color:#2289e6;
+}
 
+.logo > span {
+    color:orange;
 }
 
 h1 {
@@ -60,6 +65,7 @@ main {
     flex-direction:column;
     width: 300px;
     margin: auto;
+    background-color:
 }
 
 #calculatePallet {
