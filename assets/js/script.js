@@ -7,12 +7,23 @@ const vehicle = document.getElementById('vanOutput');
 calculateResult.addEventListener("click", calculateTotal)
 
 function calculateTotal() {
+
+    //Variables to retrieve elements from the pallet data html form and calculations from user inputs 
+
     const palletNumberInput = document.getElementById('palletNumber').value;
     const loadingWeightInput = document.getElementById('loadingWeight').value;
     const palletsWeight = palletNumberInput * loadingWeightInput
 
-    const length = 120;
-    const width = 80;
+    const palletHeightInput = document.getElementById('loadingHeight').value;
+    const euroPallet = document.querySelector('#euro').value = 120 * 80;
+    const industrialPallet = document.querySelector('#industrial').value = 120 * 100;
+
+    euroDimensions = Math.floor(parseInt(euroPallet) * parseInt(palletHeightInput))
+    industrialDimensions = parseInt(industrialPallet) + parseInt(palletHeightInput);
+
+    totalOutput.innerHTML = euroDimensions
+
+    //Object to store vehicle height and weight capacity and also the total number of pallets that can be loaded if pallets are non stackable. 
 
     const vehicleLimits = {
         smallVan: {
@@ -71,17 +82,9 @@ function calculateTotal() {
     };
 
 
-    const palletHeightInput = document.getElementById('loadingHeight').value;
-    const euroPallet = document.querySelector('#euro').value = 120 * 80;
-    const industrialPallet = document.querySelector('#industrial').value = 120 * 100;
-
-
     //Eurodimensions figure worked out by adding loading height to the pallet dims (120x80 & 120 x 100) and multipied by the number of pallets the users enters on the form so total mass can be calculated
 
-    euroDimensions = Math.floor(parseInt(euroPallet) * parseInt(palletHeightInput))
-    industrialDimensions = parseInt(industrialPallet) + parseInt(palletHeightInput);
 
-    totalOutput.innerHTML = euroDimensions
 
 
     // Calculations for euro pallets - Dimensions limit set based on total for euroDimensions/industrialDimensions multiplied by the total pallets the vehicle can fit 
