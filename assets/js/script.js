@@ -174,13 +174,11 @@ function calculateTotal() {
         vehicle.innerHTML = "No suitable vehicle found"
     }
 
-
 };
 
-const refreshBtn = document.getElementById('btnRefresh');
+//Code inside onclick function from stack overflow - to reset the page once the reset button is clicked 
 
-function refresh() {
-    history.go(0);
+function resetForm() {
+    // Add reset functionality here
+    window.location.reload();
 }
-
-refreshBtn.addEventListener('onclick', refresh);
