@@ -58,15 +58,16 @@
             <label> Weight per pallet (kg):</label>
             <input type="number" id="loadingWeight">
 
-            <label>Select Pallet Type:</label>
+            <label for="palletType">Select Pallet Type:</label>
             <select id="palletType" type="number">
-                <option id="euro" value="120*80"> Europallet 120 x 80 cm</option>
-                <option id="industrial" value="120*100">Industrial pallet 120 x 100 cm</option>
+                <option id="euro" value="euro"> Europallet 120 x 80 cm</option>
+                <option id="industrial" value="industrial">Industrial pallet 120 x 100 cm</option>
             </select>
             <br>
 
             <button id="calculatePallet">Caculate </button>
-            <!-- <button type="button" id="btnRefresh"> Reset</button> -->
+            <button id="resetButton" onclick="resetForm()" value="Reset">Reset</button>
+
 
             <br>
 
@@ -78,7 +79,7 @@
     </main>
     <!-- Footer -->
     <footer>
-        <p>For any issues with the site or questions on how to use our guide please contact us on: </p>
+        <p>Contact us on: </p>
         <p><i class="fa-solid fa-envelope"> </i> stacksmartguide@gmail.com </p>
         <p><i class="fa-solid fa-phone"></i> </i> 02477042125 </p>
 

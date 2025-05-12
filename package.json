@@ -1,0 +1,19 @@
+{
+  "name": "stacksmartguide",
+  "version": "1.0.0",
+  "description": "stacksmartguide site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MunasheMuk2/StackSmartGuide.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MunasheMuk2/StackSmartGuide/issues"
+  },
+  "homepage": "https://github.com/MunasheMuk2/StackSmartGuide#readme"
+}
