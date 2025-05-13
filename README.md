@@ -51,6 +51,7 @@ Total pallet dimensions = Length × Width × Height
 -	Length: The length of the pallet.
 -	Width: The width of the pallet.
 -	Height: The height of the pallet.
+
 For example: 
 120cm (length) × 100cm (width) × 150 cm (height) = 1,800,000 cubic centimetres (cm³)
 Total volume was also used in JS to recommend the appropriate vehicle size, ensuring efficient and safe transportation.
