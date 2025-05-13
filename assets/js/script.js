@@ -1,10 +1,9 @@
 const calculateResult = document.getElementById("calculatePallet");
-const totalOutput = document.getElementById('total');
 const vehicle = document.getElementById('vanOutput');
 
 //Event listner added to calculate button as user inputs all details and clicks calculate to get recommended vehicle
 
-calculateResult.addEventListener("click", calculateTotal)
+calculateResult.addEventListener("click", calculateTotal);
 
 function calculateTotal() {
 
@@ -22,12 +21,12 @@ function calculateTotal() {
     let palletWidth = (palletType === "euro") ? 80 : 100;
 
     const palletHeightInput = document.getElementById('loadingHeight').value;
-    const euroPallet = document.querySelector('#euro').value = palletLength * palletWidth
-    const industrialPallet = document.querySelector('#industrial').value = palletLength * palletWidth
+    const euroPallet = document.querySelector('#euro').value = palletLength * palletWidth;
+    const industrialPallet = document.querySelector('#industrial').value = palletLength * palletWidth;
 
     //Works out full pallet dimensions
 
-    const euroDimensions = Math.floor(parseInt(euroPallet) * parseInt(palletHeightInput))
+    const euroDimensions = Math.floor(parseInt(euroPallet) * parseInt(palletHeightInput));
     const industrialDimensions = parseInt(industrialPallet) * parseInt(palletHeightInput);
 
     // totalOutput.innerHTML = industrialDimensions
@@ -180,7 +179,7 @@ function calculateTotal() {
         vehicle.innerHTML = "No suitable vehicle found";
     }
 
-};
+}
 
 //Code inside onclick function from stack overflow - to reset the page once the reset button is clicked 
 

@@ -4,7 +4,7 @@ Stack smart guide is a web pallet calculator that provides logistics professiona
 
 The site can be accessed by this [link](https://munashemuk2.github.io/StackSmartGuide/)
 
-![Responsive Mockup](screenshots/responsive.jpg)
+![Responsive Mockup](screenshots/mockup.jpg)
 
 ### Target audience:
 
@@ -97,13 +97,9 @@ _Frequent users_
 
 ### Typography
 
-![Main Font](screenshots/Open-%20sans%20.jpg)
+![Fonts](screenshots/Open-%20sans%20.jpg)
 
-- Public sans Google Font was used to create a proffesional and contemporary look 
-
-![Secondary Font](screenshots/public-sans.jpg)
-
-- Open sans Google Font was used as the main font  to increase readability of the content on the pages as this font's modern design is highly readable even at smaller sizes.
+- Choose open/public sans Google Font as they increase readability and clarity. Due to this it will be easy for users to scan through data and numerical values 
 
 ### Wireframes 
 
@@ -126,50 +122,33 @@ Please refer to the [TESTING.md](testing.md) file for all test-related informati
 ### Deployment to GitHub Pages
 
 - The site was deployed to GitHub pages. Using the following steps: 
-  - In the [GitHub repository](https://github.com/MunasheMuk2/streetwear-curated), clicked on the Settings tab 
+  - In the [GitHub repository](https://github.com/MunasheMuk2/StackSmartGuide), clicked on the Settings tab 
   - Selected the main branch under default branch and clicked on code 
   - Under deployments was a ribbon display to indicate the successful deployment.
 
-The live link can be found [here](https://munashemuk2.github.io/streetwear-curated/)
+The live link can be found [here](https://munashemuk2.github.io/StackSmartGuide/)
 
 ### Local Deployment
 
 In order to make a local copy of this project clone it in your IDE Terminal using the following command:
 
-- `git clone https://github.com/MunasheMuk2/streetwear-curated`
+- `git clone https://github.com/MunasheMuk2/StackSmartGuide`
 
 
 ---
 
 ## Future improvements
-- add custom 404 page;
-- improve the quality of the commit messages as I started with past tense and did not put capitals at the start
-- add a vintage streetwear page with secondhand streetwear clothing and accessories 
-
----
-
-### Content 
-
--  Events page text content from: https://www.swlondoner.co.uk/life/18092024-top-five-sneaker-and-street-fashion-events
-
--  Other text content written by myself and also AI generated
+- Add more pallet types to the select options  
+- Include another page with vehicle specifications details 
+- Allow users to manually type in their pallet length and width
 
 ---
 
  #### Tools
 
-    - [Adobe](https://www.adobe.com) Image resizing and cropping
-    - [Favicon](https://favicon.io/favicon-converter/) resizing and shaping fav icons
-    - [Canva](https://www.canva.com/) Wireframes, logo and favicon created in canva
-    - [Crop-circle](https://crop-circle.imageonline.co/#google_vignette) fav icon circle cropper
+    - [Favicon](https://favicon.io/favicon-converter/) generating an emoji fav icon 
+    - [Canva](https://www.canva.com/) Wireframes created in canva
   
----
-
-### Media
-
-- Images sourced from : https://unsplash.com/
-- ReadMe responsive mock up from: https://ui.dev/amiresponsive
-- testing.md gif from : gif maker (apple app)
 ---
 
 ### Credits
