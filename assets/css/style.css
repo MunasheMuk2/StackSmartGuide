@@ -121,7 +121,7 @@ footer {
 @media only screen and (min-width: 1200px) {
 
     main {
-        margin-top:100px;
+        margin-top:50px;
     }
 
     .headers{
@@ -151,7 +151,15 @@ footer {
 
     select{
         height:30px;
-        width:350px
+        width:350px;
+    }
+
+    #calculatePallet {
+        height:45px;
+    }
+
+    #resetButton {
+        height:45px;
     }
 
 
