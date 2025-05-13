@@ -149,6 +149,11 @@ footer {
         font-size: 21px;
     }
 
+    select{
+        height:30px;
+        width:350px
+    }
+
 
 
     
