@@ -69,7 +69,7 @@ main {
     display: flex;
     flex-direction:column;
     width: 300px;
-    margin: auto;
+    margin: auto !important;
     background-color:
 }
 
@@ -140,16 +140,15 @@ footer {
         border-color: orange;
     }
 
-    .palletCalculator {
-        width: 600px;
-        height: 100px;
-        margin-top: 
+    .palletCalculator > input {
+        width: 350px;
+        height:30px; 
+       
         
     }
 
-    .form {
-        width:100vh;
-        
-    }
+
+
+    
 
 }
