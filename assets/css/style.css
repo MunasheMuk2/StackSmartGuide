@@ -154,6 +154,10 @@ footer {
         width:350px;
     }
 
+    #vanOutput{
+        width:350px
+    }
+
     #calculatePallet {
         height:45px;
     }
