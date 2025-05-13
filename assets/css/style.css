@@ -9,16 +9,13 @@
     box-sizing: border-box;
 }
 
+/* General styles */
+
 body{
     min-height: 100vh;
     display: flex;
     flex-direction:column;
     font-family: 'Open sans', public-sans;
-}
-
-
-header {    
-    font-size:15px
 }
 
 .logo{
@@ -28,8 +25,15 @@ margin-left:7px;
 margin-bottom:25px;
 }
 
+/* to change the 'smartguide' in the logo to orange */
 .logo > span {
     color:orange;
+}
+
+/* Headings */
+
+header {    
+    font-size:15px;
 }
 
 h1 {
@@ -42,6 +46,8 @@ h1 {
     text-wrap: wrap;
 }
 
+/* Main section */
+
 main {
     flex:1 0 auto;
 }
@@ -53,7 +59,7 @@ main {
 
 .form {
     width:100vh;
-    margin:auto
+    margin:auto;
 }
 
 .palletCalculator {
@@ -61,7 +67,6 @@ main {
     flex-direction:column;
     width: 300px;
     margin: auto !important;
-    background-color:
 }
 
 #vanOutput {
@@ -70,6 +75,8 @@ main {
     margin-top:15px;
     height:45px;
 }
+
+/* Buttons */
 
 #calculatePallet {
     background-color:#2289e6;
@@ -89,6 +96,8 @@ main {
     padding:5px;
     }
 
+    /* Footer section */
+
 footer {
     background-color:#2289e6;
     padding-left:10px;
@@ -100,17 +109,25 @@ footer {
 @media only screen and (min-width: 1200px) {
 
     main {
-        margin-top:50px;
+        margin-top:10px;
     }
 
     .headers{
         font-size:40px;
-        margin-top:10px
+        margin-top:10px;
     }
 
     .paragraphs{
-        font-size:25px;
-        margin-top:20px
+        font-size:20px;
+        margin-top:20px;
+    }
+
+    #palletData {
+        padding-top:10px;
+    }
+
+    .palletCalculator{
+        padding-top:10px;
     }
 
     .palletCalculator > input {
@@ -119,7 +136,7 @@ footer {
     }
 
     .palletCalculator > label {
-        font-size: 21px;
+        font-size: 18px;
     }
 
     select{
@@ -143,7 +160,7 @@ footer {
 
     footer{
         padding-top:5px;
-        font-size:18px
+        font-size:18px;
     }
 
 }

@@ -27,8 +27,8 @@ function calculateTotal() {
 
     //Works out full pallet dimensions
 
-    euroDimensions = Math.floor(parseInt(euroPallet) * parseInt(palletHeightInput))
-    industrialDimensions = parseInt(industrialPallet) * parseInt(palletHeightInput);
+    const euroDimensions = Math.floor(parseInt(euroPallet) * parseInt(palletHeightInput))
+    const industrialDimensions = parseInt(industrialPallet) * parseInt(palletHeightInput);
 
     // totalOutput.innerHTML = industrialDimensions
 
@@ -99,85 +99,85 @@ function calculateTotal() {
     if (palletType === "euro" && euroDimensions <= 1056000 && palletsWeight <= vehicleLimits.smallVan.maxWeight &&
         palletHeightInput <= vehicleLimits.smallVan.maxHeight &&
         palletNumberInput <= vehicleLimits.smallVan.maxPallets) {
-        vehicle.innerHTML = "Small van - 100 x  120 x 110 cm "
+        vehicle.innerHTML = "Small van - 100 x  120 x 110 cm ";
     } else if (palletType === "industrial" && industrialDimensions <= 1320000 && palletsWeight <= vehicleLimits.smallVan.maxWeight &&
         palletHeightInput <= vehicleLimits.smallVan.maxHeight &&
         palletNumberInput <= vehicleLimits.smallVan.maxPallets) {
-        vehicle.innerHTML = "Small van - 100 x  120 x 110 cm "
+        vehicle.innerHTML = "Small van - 100 x  120 x 110 cm ";
     } else if (palletType === "euro" && euroDimensions <= 1248000 && palletsWeight <= vehicleLimits.shortWheelBase.maxWeight &&
         palletHeightInput <= vehicleLimits.shortWheelBase.maxHeight &&
         palletNumberInput <= vehicleLimits.shortWheelBase.maxPallets) {
-        vehicle.innerHTML = "Short Wheel Base - 200 x 120 x 130cm "
+        vehicle.innerHTML = "Short Wheel Base - 200 x 120 x 130cm ";
     } else if (palletType === "industrial" && industrialDimensions <= 1560000 && palletsWeight <= vehicleLimits.shortWheelBase.maxWeight &&
         palletHeightInput <= vehicleLimits.shortWheelBase.maxHeight &&
         palletNumberInput <= vehicleLimits.shortWheelBase.maxPallets) {
-        vehicle.innerHTML = "Short Wheel Base - 200 x 120 x 130cm "
+        vehicle.innerHTML = "Short Wheel Base - 200 x 120 x 130cm ";
     } else if (palletType === "euro" && euroDimensions <= 1248001 && palletsWeight <= vehicleLimits.longWheelBase.maxWeight &&
         palletHeightInput <= vehicleLimits.longWheelBase.maxHeight &&
         palletNumberInput <= vehicleLimits.longWheelBase.maxPallets) {
-        vehicle.innerHTML = "Long Wheel Base - 300 x 120 x 170cm"
+        vehicle.innerHTML = "Long Wheel Base - 300 x 120 x 170cm";
     } else if (palletType === "industrial" && industrialDimensions <= 2040000 && palletsWeight <= vehicleLimits.longWheelBase.maxWeight &&
         palletHeightInput <= vehicleLimits.longWheelBase.maxHeight &&
         palletNumberInput <= vehicleLimits.longWheelBase.maxPallets) {
-        vehicle.innerHTML = "Long Wheel Base - 300 x 120 x 170cm"
+        vehicle.innerHTML = "Long Wheel Base - 300 x 120 x 170cm";
     } else if (palletType === "euro" && euroDimensions <= 1680000 && palletsWeight <= vehicleLimits.smallVan.maxWeight &&
         palletHeightInput <= vehicleLimits.smallVan.maxHeight &&
         palletNumberInput <= vehicleLimits.smallVan.maxPallets) {
-        vehicle.innerHTML = "Sprinter van - 420 x 125 x 175cm"
+        vehicle.innerHTML = "Sprinter van - 420 x 125 x 175cm";
     } else if (palletType === "industrial" && industrialDimensions <= 2100000 && palletsWeight <= vehicleLimits.smallVan.maxWeight &&
         palletHeightInput <= vehicleLimits.smallVan.maxHeight &&
         palletNumberInput <= vehicleLimits.smallVan.maxPallets) {
-        vehicle.innerHTML = "Sprinter van - 420 x 125 x 175cm"
+        vehicle.innerHTML = "Sprinter van - 420 x 125 x 175cm";
     } else if (palletType === "euro" && euroDimensions <= 1776000 && palletsWeight <= vehicleLimits.lutonVan.maxWeight &&
         palletHeightInput <= vehicleLimits.lutonVan.maxHeight &&
         palletNumberInput <= vehicleLimits.lutonVan.maxPallets) {
-        vehicle.innerHTML = "Luton van - 400 x 200 x 185cm"
+        vehicle.innerHTML = "Luton van - 400 x 200 x 185cm";
     } else if (palletType === "industrial" && industrialDimensions <= 2220000 && palletsWeight <= vehicleLimits.lutonVan.maxWeight &&
         palletHeightInput <= vehicleLimits.lutonVan.maxHeight &&
         palletNumberInput <= vehicleLimits.lutonVan.maxPallets) {
-        vehicle.innerHTML = "Luton van - 400 x 200 x 185cm"
+        vehicle.innerHTML = "Luton van - 400 x 200 x 185cm";
     } else if (palletType === "euro" && euroDimensions <= 22080000 && palletsWeight <= vehicleLimits.sevenHalfTonne.maxWeight &&
         palletHeightInput <= vehicleLimits.sevenHalfTonne.maxHeight &&
         palletNumberInput <= vehicleLimits.sevenHalfTonne.maxPallets) {
-        vehicle.innerHTML = "7 & a half tonne truck - 600 x 230 x 230cm"
+        vehicle.innerHTML = "7 & a half tonne truck - 600 x 230 x 230cm";
     } else if (palletType === "industrial" && industrialDimensions <= 2760000 && palletsWeight <= vehicleLimits.sevenHalfTonne.maxWeight &&
         palletHeightInput <= vehicleLimits.sevenHalfTonne.maxHeight &&
         palletNumberInput <= vehicleLimits.sevenHalfTonne.maxPallets) {
-        vehicle.innerHTML = "7 & a half tonne truck - 600 x 230 x 230cm"
+        vehicle.innerHTML = "7 & a half tonne truck - 600 x 230 x 230cm";
     } else if (palletType === "euro" && euroDimensions <= 24000000 && palletsWeight <= vehicleLimits.eighteenTonne.maxWeight &&
         palletHeightInput <= vehicleLimits.eighteenTonne.maxHeight &&
         palletNumberInput <= vehicleLimits.eighteenTonne.maxPallets) {
-        vehicle.innerHTML = "18 Tonne - 730 x 240 x 250cm"
+        vehicle.innerHTML = "18 Tonne - 730 x 240 x 250cm";
     } else if (palletType === "industrial" && industrialDimensions <= 3000000 && palletsWeight <= vehicleLimits.eighteenTonne.maxWeight &&
         palletHeightInput <= vehicleLimits.eighteenTonne.maxHeight &&
         palletNumberInput <= vehicleLimits.eighteenTonne.maxPallets) {
-        vehicle.innerHTML = "18 Tonne - 730 x 240 x 250cm"
-    } else if (palletType === "euro" && euroDimensions >= 24000001 && euroDimensions <= 2304000 && palletsWeight <= vehicleLimits.twentySixTonne.maxWeight &&
+        vehicle.innerHTML = "18 Tonne - 730 x 240 x 250cm";
+    } else if (palletType === "euro" && euroDimensions >= 2400001 && euroDimensions <= 2304000 && palletsWeight <= vehicleLimits.twentySixTonne.maxWeight &&
         palletHeightInput <= vehicleLimits.twentySixTonne.maxHeight &&
         palletNumberInput <= vehicleLimits.twentySixTonne.maxPallets) {
-        vehicle.innerHTML = "26 Tonne - 730 x 240 x 240cm"
+        vehicle.innerHTML = "26 Tonne - 730 x 240 x 240cm";
     } else if (palletType === "industrial" && industrialDimensions >= 3000001 && industrialDimensions <= 2880000 && palletsWeight <= vehicleLimits.twentySixTonne.maxWeight &&
         palletHeightInput <= vehicleLimits.twentySixTonne.maxHeight &&
         palletNumberInput <= vehicleLimits.twentySixTonne.maxPallets) {
-        vehicle.innerHTML = "26 Tonne - 730 x 240 x 240cm"
+        vehicle.innerHTML = "26 Tonne - 730 x 240 x 240cm";
     } else if (palletType === "euro" && euroDimensions <= 2592000 && palletsWeight <= vehicleLimits.artic.maxWeight &&
         palletHeightInput <= vehicleLimits.artic.maxHeight &&
         palletNumberInput <= vehicleLimits.artic.maxPallets) {
-        vehicle.innerHTML = "Artic - 1350 x 240 x 270cm"
+        vehicle.innerHTML = "Artic - 1350 x 240 x 270cm";
     } else if (palletType === "industrial" && industrialDimensions <= 3240000 && palletsWeight <= vehicleLimits.artic.maxWeight &&
         palletHeightInput <= vehicleLimits.artic.maxHeight &&
         palletNumberInput <= vehicleLimits.artic.maxPallets) {
-        vehicle.innerHTML = "Artic - 1350 x 240 x 270cm"
+        vehicle.innerHTML = "Artic - 1350 x 240 x 270cm";
     } else if (palletType === "euro" && euroDimensions >= 2400000 && euroDimensions <= 2880000 && palletsWeight <= vehicleLimits.megatrailer.maxWeight &&
         palletHeightInput <= vehicleLimits.megatrailer.maxHeight &&
         palletNumberInput <= vehicleLimits.megatrailer.maxPallets) {
-        vehicle.innerHTML = "Megatrailer - 1350 x 240 x 300cm "
+        vehicle.innerHTML = "Megatrailer - 1350 x 240 x 300cm ";
     } else if (palletType === "industrial" && industrialDimensions >= 2880000 && industrialDimensions <= 3600000 && palletsWeight <= vehicleLimits.megatrailer.maxWeight &&
         palletHeightInput <= vehicleLimits.megatrailer.maxHeight &&
         palletNumberInput <= vehicleLimits.megatrailer.maxPallets) {
-        vehicle.innerHTML = "Megatrailer - 1350 x 240 x 300cm "
+        vehicle.innerHTML = "Megatrailer - 1350 x 240 x 300cm ";
     } else {
-        vehicle.innerHTML = "No suitable vehicle found"
+        vehicle.innerHTML = "No suitable vehicle found";
     }
 
 };
