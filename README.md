@@ -72,7 +72,6 @@ _Frequent users_
 ## Technologies Used
 
 - [If else statements](https://www.shecodes.io) - Used to Access Properties Inside an Object for If Else Statements
-- [CSS roots](https://developer.mozilla.org/en-US/docs/Web/CSS/:root) was for global CSS variables. (edited to match wireframe)
 - [VSCode](https://code.visualstudio.com/)  Used as the main code editor
 - [GitHub](https://github.com/) code host for the site
 - Code institute tutorials for understanding how to access elements in the DOM through JavaScript
@@ -82,7 +81,7 @@ _Frequent users_
 
 1. Had an issue with the select options for the pallet types showing as strings despite the select type being number. Rectified this by adding .value to the variable in JavaScript and listing the pallet size dimensions 
 
-2. The site buttons were not working on the page when trying to add an event listener for clicks. Resolved this by putting the form data in a div container instead.
+2. The site buttons were not working on the page when trying to add an event listener for clicks in a form. Resolved this by taking out the form tags and putting the form data in a div container instead.
 
 ---
 ## Design
