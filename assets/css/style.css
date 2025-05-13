@@ -73,6 +73,10 @@ main {
     background-color:
 }
 
+#vanOutput {
+    margin-top:15px;
+    height:45px
+}
 
 #calculatePallet {
     background-color:#2289e6;
@@ -94,6 +98,7 @@ main {
 
 #vanOutput {
     border: 1px solid black;
+    border-color: orange;
 }
 
 footer {
@@ -102,15 +107,49 @@ footer {
     
 }
 
-/* Large devices (laptops/desktops, 992px and up) */
+/* Large devices (laptops/desktops, 992px and up)
 @media only screen and (min-width: 992px) {
 
+    main {
+        margin-top:60px
+    }
 
-}
+} */
 
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
 
+    main {
+        margin-top:100px;
+    }
+
+    .headers{
+        font-size:40px;
+        margin-top:10px
+    
+    }
+
+    .paragraphs{
+        font-size:25px;
+        margin-top:20px
+    }
+
+    #vanOutput {
+        height:60px !important;
+        border-color: orange;
+    }
+
+    .palletCalculator {
+        width: 600px;
+        height: 100px;
+        margin-top: 
+        
+    }
+
+    .form {
+        width:100vh;
+        
+    }
 
 }
