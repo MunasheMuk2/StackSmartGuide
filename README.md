@@ -15,6 +15,48 @@ The site can be accessed by this [link](https://munashemuk2.github.io/StackSmart
 
 The site makes freight planning easier for logistics professionals as the guide suggests the ideal vehicle size based on the cargo they will be transporting.  In return, their planning will be more efficient, ensures safe transportation as goods will not be overloaded over the vehicle weight capacity and they will choose the right vehicle that fits all goods which reduces costs of sending replacement vehicles to their clients due to miscalculation errors. 
 
+### Core Site Formula applied in JavaScript
+
+ ### How to Determine if Pallets Fit in a Vehicle
+
+ 1.	Check the Total Pallet Length Against the Vehicle Length
+
+- Multiply the length of a single pallet by the total number of pallets.
+- If the combined pallet length is equal to or less than the van's length, proceed to check the width.
+- If the total length exceeds the van’s length, rearrangement might be necessary.
+
+2.	Adjust the Pallet Orientation to Fit the Space
+
+- Pallets can be rotated to reduce the total length taken up inside the vehicle.
+- Example: If a pallet is 120 cm (length) × 100 cm (width), it can be rotated so that the 100 cm width becomes the length instead, potentially making the load fit better.
+
+3.	Check the Width of the Pallets Against the Vehicle Width
+
+- After adjusting or confirming the length, check if pallets fit within the vehicle’s width.
+- Apply the same logic: If width exceeds the van’s limit, consider rotating the pallets to balance the fit.
+
+4.	Consider Stackability (If Applicable)
+
+- If the pallets are stackable, multiply the height of one pallet by the number stacked until reaching the vehicle’s height limit.
+- StackSmartGuide does not account for stackable pallets, so this step is omitted in its calculations.
+
+### Final Decision
+
+- If the combined pallet dimensions fit within the vehicle’s length, width, and height, then the vehicle is suitable.
+- If not, a larger vehicle may be needed.
+
+### Total volume
+
+Total pallet dimensions = Length × Width × Height
+-	Length: The length of the pallet.
+-	Width: The width of the pallet.
+-	Height: The height of the pallet.
+For example: 
+120cm (length) × 100cm (width) × 150 cm (height) = 1,800,000 cubic centimetres (cm³)
+Total volume was also used in JS to recommend the appropriate vehicle size, ensuring efficient and safe transportation.
+
+---
+
 ### User stories:
 
 _First time visitors_
@@ -141,7 +183,6 @@ In order to make a local copy of this project clone it in your IDE Terminal usin
 
 ## Future improvements
 - Add more pallet types to the select options  
-- Include another page with vehicle specifications details 
 - Allow users to manually type in their pallet length and width
 
 ---
