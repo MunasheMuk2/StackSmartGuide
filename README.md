@@ -43,18 +43,22 @@ _Frequent users_
 
     - Placed at the top of the page is the company logo "StackSmartGuide" on the left
 
+    ![Logo](screenshots/logo.jpg)
+
 ---
 
 + ### Home Page
 
     - Features: 
 
+    ![Home Page](screenshots/landingpage.jpg)
+
         * Guide introduction with steps on how to use the guide 
         * Form with inputs/ select options to collect data for vehicle recommendation 
         * Calculate button to show results based on user inputs and reset button to bring form back to its initial state and allow user to fill in new information 
 
 
-    ![Home Page](screenshots/home-page.jpg)
+  
 
 ---
 
@@ -97,9 +101,8 @@ _Frequent users_
 
 ### Typography
 
-![Fonts](screenshots/Open-%20sans%20.jpg)
 
-- Choose open/public sans Google Font as they increase readability and clarity. Due to this it will be easy for users to scan through data and numerical values 
+- Chose open/public sans Google Font as they increase readability and clarity. Due to this it will be easy for users to scan through data and numerical values 
 
 ### Wireframes 
 
