@@ -16,6 +16,8 @@ body{
     display: flex;
     flex-direction:column;
     font-family: 'Open sans', public-sans;
+    width:100%;
+    margin:auto !important
 }
 
 .logo{
@@ -33,7 +35,7 @@ margin-bottom:25px;
 /* Headings */
 
 header {    
-    font-size:15px;
+    font-size:15px
 }
 
 h1 {
@@ -55,12 +57,11 @@ main {
 .paragraphs{
     text-align:center;
     font-size:15px;
-    width:95%;
 }
 
 .form {
     width:100vh;
-    margin:auto;
+    margin:auto
 }
 
 .palletCalculator {
@@ -68,6 +69,7 @@ main {
     flex-direction:column;
     width: 300px;
     margin: auto !important;
+    background-color:
 }
 
 #vanOutput {
@@ -104,39 +106,26 @@ footer {
     padding-left:10px;
     color:white;
     
+    
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
 
     main {
-        margin-top:10px;
+        margin-top:50px;
     }
 
     .headers{
         font-size:40px;
-        margin-top:10px;
+        margin-top:10px
     }
 
     .paragraphs{
-        font-size:15px;
-        margin-top:20px;
-        width:90%;
-        margin-left:20px
-        
+        font-size:25px;
+        margin-top:20px
     }
-
-    #dataparagraph{
-        margin-left:95px;
-    }
-
-    #palletData {
-        padding-top:10px;
-    }
-
-    .palletCalculator{
-        padding-top:10px;
-    }
+    
 
     .palletCalculator > input {
         width: 350px;
@@ -144,7 +133,7 @@ footer {
     }
 
     .palletCalculator > label {
-        font-size: 18px;
+        font-size: 21px;
     }
 
     select{
@@ -168,7 +157,7 @@ footer {
 
     footer{
         padding-top:5px;
-        font-size:18px;
+        font-size:18px
     }
 
 }
