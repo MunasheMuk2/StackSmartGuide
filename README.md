@@ -40,11 +40,6 @@ The site makes freight planning easier for logistics professionals as the guide 
 - If the pallets are stackable, multiply the height of one pallet by the number stacked until reaching the vehicle’s height limit.
 - StackSmartGuide does not account for stackable pallets, so this step is omitted in its calculations.
 
-### Final Decision
-
-- If the combined pallet dimensions fit within the vehicle’s length, width, and height, then the vehicle is suitable.
-- If not, a larger vehicle may be needed.
-
 ### Total volume
 
 Total pallet dimensions = Length × Width × Height
@@ -54,8 +49,12 @@ Total pallet dimensions = Length × Width × Height
 
 For example: 
 120cm (length) × 100cm (width) × 150 cm (height) = 1,800,000 cubic centimetres (cm³)
-Total volume was also used in JS to recommend the appropriate vehicle size, ensuring efficient and safe transportation.
 
+### Final Decision
+
+- If the combined pallet dimensions fit within the vehicle’s length, width, and height, then the vehicle is suitable.
+- If not, a larger vehicle may be needed.
+- Total volume was also used in JS to recommend the appropriate vehicle size, ensuring efficient and safe transportation.
 ---
 
 ### User stories:
