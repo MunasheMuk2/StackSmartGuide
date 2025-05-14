@@ -191,6 +191,7 @@ In order to make a local copy of this project clone it in your IDE Terminal usin
 
     - [Favicon](https://favicon.io/favicon-converter/) generating an emoji fav icon 
     - [Canva](https://www.canva.com/) Wireframes created in canva
+    - Used chatgpt and dev tools to test some of the Javascript code 
   
 ---
 

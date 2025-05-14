@@ -48,9 +48,9 @@ In order to confirm the correct functionality, responsiveness, and appearance:
 | feature | action | expected result | tested | passed | comments |
 | --- | --- | --- | --- | --- | --- |
 | Pallet Data Form | | | | | |
-| Number of pallets | Enter number | number is displayed | Yes | Yes | - |
-| Pallet height | Enter number | number is displayed | Yes | Yes | - |
-| Weight per pallet | Enter number | number is displayed | Yes | Yes | - |
+| Number of pallets input | Enter number | number is displayed | Yes | Yes | - |
+| Pallet height input | Enter number | number is displayed | Yes | Yes | - |
+| Weight per pallet input | Enter number | number is displayed | Yes | Yes | - |
 | Select pallet type | Select one of the 2 predifined pallet types  | pallet type is displayed | Yes | Yes | - |
 | Buttons | | | | | |
 | Calculate button | Click on the calculate button | An output of a vehicle recommendation is displayed | Yes | Yes | - |
