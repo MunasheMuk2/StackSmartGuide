@@ -4,7 +4,7 @@
 
 In order to confirm the correct functionality, responsiveness, and appearance:
 
-+ The website was tested on the most popular browsers : Chrome and internet explorer
++ The website was tested on popular browsers : Chrome and Microsoft edge
 
     - Chrome:
 
@@ -81,3 +81,9 @@ In order to confirm the correct functionality, responsiveness, and appearance:
   ![Landing Page Lighthouse](screenshots/lighthouse.jpg)
 
 ---
+
++ ### JSHint
+
+ No errors or warnings were found when passing through the JS code in JSHint. Only 15 warnings indicating that the version of JSHint does not support key word 'const' as  this is supported Javascript version ES6 
+
+   ![JSHint](screenshots/jshint.jpg)

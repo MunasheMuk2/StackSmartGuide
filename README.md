@@ -121,7 +121,7 @@ _Frequent users_
 
 ### Solved bugs
 
-1. Had an issue with the select options for the pallet types showing as strings despite the select type being number. Rectified this by adding .value to the variable in JavaScript and listing the pallet size dimensions 
+1. Had an issue with the select options for the pallet types showing as strings despite the select type being a number. Rectified this by adding .value to the variable in JavaScript and listing the pallet size dimensions 
 
 2. The site buttons were not working on the page when trying to add an event listener for clicks in a form. Resolved this by taking out the form tags and putting the form data in a div container instead.
 
