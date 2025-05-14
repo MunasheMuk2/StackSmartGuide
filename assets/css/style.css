@@ -55,6 +55,7 @@ main {
 .paragraphs{
     text-align:center;
     font-size:15px;
+    width:95%;
 }
 
 .form {
