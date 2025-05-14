@@ -10,9 +10,9 @@ In order to confirm the correct functionality, responsiveness, and appearance:
 
     ![Chrome](screenshots/chrome.jpg)
 
-     - Internet explorer:
+     - Microsoft Edge:
 
-    ![Internet explorer](screenshots/MicrosoftEdge.jpg)
+    ![Microsoft Edge](screenshots/MicrosoftEdge.jpg)
 
 ---
 
