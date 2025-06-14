@@ -185,33 +185,41 @@ function calculateTotal() {
 document.getElementById("palletNumber").addEventListener("input", palletError);
 
 function palletError() {
-    // let palletNumber = this.value;
-    // if (palletNumber < 1 || palletNumber > 26) {
-    //     this.setCustomValidity("Error");
-    // }
 
     let palletNumber = this.value;
     //  reportValidity allows user to be notified error message if the if statement is false - code from developer.mozilla
-    this.reportValidity();
     if (palletNumber < 1 || palletNumber > 26) {
         // setCustomValidity method used to enable customs validity message - code from developer.mozilla
         this.setCustomValidity("Number of pallets must be between 1 and 26.");
     } else {
         this.setCustomValidity("");
     }
+    this.reportValidity();
 }
 
 document.getElementById("loadingHeight").addEventListener("input", heightError);
 
 function heightError() {
     let loadingHeight = this.value;
-    this.reportValidity();
-
     if (loadingHeight < 1 || loadingHeight > 100) {
         this.setCustomValidity("Height must be between 1 and 100cm.");
     } else {
         this.setCustomValidity("");
     }
+    this.reportValidity();
+}
+
+document.getElementById("loadingWeight").addEventListener("input", weightError);
+
+function weightError() {
+    let loadingWeight = this.value;
+
+    if (loadingWeight < 1 || loadingWeight > 923.07) {
+        this.setCustomValidity("Loading weight must be between 1 and 923 kg.")
+    } else {
+        this.setCustomValidity(" ");
+    }
+    this.reportValidity();
 }
 
 
