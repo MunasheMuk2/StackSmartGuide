@@ -181,6 +181,26 @@ function calculateTotal() {
 
 }
 
+document.getElementById("palletNumber").addEventListener("input", errorMessage);
+
+function errorMessage() {
+    // let palletNumber = this.value;
+    // if (palletNumber < 1 || palletNumber > 26) {
+    //     this.setCustomValidity("Error");
+    // }
+
+    let palletNumber = this.value;
+    //  reportValidity allows user to be notified error message if the if statement is false - code from developer.mozilla
+    this.reportValidity();
+    if (palletNumber < 1 || palletNumber > 26) {
+        // setCustomValidity method used to enable customs validity message - code from developer.mozilla
+        this.setCustomValidity("Number of pallets must be between 1 and 26.");
+    } else {
+        this.setCustomValidity("");
+    }
+}
+
+
 //Code inside onclick function from stack overflow - to reset the page once the reset button is clicked 
 
 function resetForm() {
