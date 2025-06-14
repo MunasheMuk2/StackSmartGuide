@@ -92,7 +92,8 @@ function calculateTotal() {
 
 
     // Output result
-    //If statements based on selection of Europallet and user inputs of weight etc - else if applied to ensure the vehicle recommandation is based on the smallest vehicle that can take the total goods
+    //If statements based on selection of pallet type and user inputs of weight etc - else if applied to ensure the vehicle recommandation is based on the smallest vehicle that can take the total goods.
+    // eurodimensions /industrial dimension comparison limit set based on height of vehicles by calculating for example for europallet small van 120 x 80 x 110 (vehicle height). This way if pallets surpass 110cm height another vehicle is recommended.
 
 
     if (palletType === "euro" && euroDimensions <= 1056000 && palletsWeight <= vehicleLimits.smallVan.maxWeight &&
@@ -181,9 +182,9 @@ function calculateTotal() {
 
 }
 
-document.getElementById("palletNumber").addEventListener("input", errorMessage);
+document.getElementById("palletNumber").addEventListener("input", palletError);
 
-function errorMessage() {
+function palletError() {
     // let palletNumber = this.value;
     // if (palletNumber < 1 || palletNumber > 26) {
     //     this.setCustomValidity("Error");
@@ -195,6 +196,19 @@ function errorMessage() {
     if (palletNumber < 1 || palletNumber > 26) {
         // setCustomValidity method used to enable customs validity message - code from developer.mozilla
         this.setCustomValidity("Number of pallets must be between 1 and 26.");
+    } else {
+        this.setCustomValidity("");
+    }
+}
+
+document.getElementById("loadingHeight").addEventListener("input", heightError);
+
+function heightError() {
+    let loadingHeight = this.value;
+    this.reportValidity();
+
+    if (loadingHeight < 1 || loadingHeight > 100) {
+        this.setCustomValidity("Height must be between 1 and 100cm.");
     } else {
         this.setCustomValidity("");
     }
