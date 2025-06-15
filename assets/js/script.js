@@ -31,8 +31,6 @@ function calculateTotal() {
     const euroDimensions = Math.floor(parseInt(euroPallet) * parseInt(palletHeightInput));
     const industrialDimensions = parseInt(industrialPallet) * parseInt(palletHeightInput);
 
-    // totalOutput.innerHTML = industrialDimensions
-
 
     /*Object to store vehicle height and weight capacity and also the total
     number of pallets that can be loaded if pallets are non stackable. */
@@ -161,15 +159,15 @@ function calculateTotal() {
         palletHeightInput <= vehicleLimits.eighteenTonne.maxHeight &&
         palletNumberInput <= vehicleLimits.eighteenTonne.maxPallets) {
         vehicle.innerHTML = "18 Tonne - 730 x 240 x 250cm";
-    } else if (palletType === "euro" && euroDimensions >= 2400001 && palletsWeight <= vehicleLimits.twentySixTonne.maxWeight &&
+    } else if (palletType === "euro" && euroDimensions <= 2304000 && palletsWeight <= vehicleLimits.twentySixTonne.maxWeight &&
         palletHeightInput <= vehicleLimits.twentySixTonne.maxHeight &&
         palletNumberInput <= vehicleLimits.twentySixTonne.maxPallets) {
         vehicle.innerHTML = "26 Tonne - 730 x 240 x 240cm";
-    } else if (palletType === "industrial" && industrialDimensions >= 3000001 && industrialDimensions <= 2880000 && palletsWeight <= vehicleLimits.twentySixTonne.maxWeight &&
+    } else if (palletType === "industrial" && industrialDimensions <= 2880000 && palletsWeight <= vehicleLimits.twentySixTonne.maxWeight &&
         palletHeightInput <= vehicleLimits.twentySixTonne.maxHeight &&
         palletNumberInput <= vehicleLimits.twentySixTonne.maxPallets) {
         vehicle.innerHTML = "26 Tonne - 730 x 240 x 240cm";
-    } else if (palletType === "euro" && euroDimensions <= 2592000 && palletsWeight <= vehicleLimits.artic.maxWeight &&
+    } else if (palletType === "euro" && euroDimensions >= 2592000 && palletsWeight <= vehicleLimits.artic.maxWeight &&
         palletHeightInput <= vehicleLimits.artic.maxHeight &&
         palletNumberInput <= vehicleLimits.artic.maxPallets) {
         vehicle.innerHTML = "Artic - 1350 x 240 x 270cm";
