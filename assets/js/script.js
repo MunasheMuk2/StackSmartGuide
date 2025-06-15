@@ -161,7 +161,7 @@ function calculateTotal() {
         palletHeightInput <= vehicleLimits.eighteenTonne.maxHeight &&
         palletNumberInput <= vehicleLimits.eighteenTonne.maxPallets) {
         vehicle.innerHTML = "18 Tonne - 730 x 240 x 250cm";
-    } else if (palletType === "euro" && euroDimensions >= 2400001 && euroDimensions <= 2304000 && palletsWeight <= vehicleLimits.twentySixTonne.maxWeight &&
+    } else if (palletType === "euro" && euroDimensions >= 2400001 && palletsWeight <= vehicleLimits.twentySixTonne.maxWeight &&
         palletHeightInput <= vehicleLimits.twentySixTonne.maxHeight &&
         palletNumberInput <= vehicleLimits.twentySixTonne.maxPallets) {
         vehicle.innerHTML = "26 Tonne - 730 x 240 x 240cm";
@@ -213,8 +213,8 @@ document.getElementById("loadingHeight").addEventListener("input", heightError);
 
 function heightError() {
     let loadingHeight = this.value;
-    if (loadingHeight < 1 || loadingHeight > 100) {
-        this.setCustomValidity("Height must be between 1 and 100cm.");
+    if (loadingHeight < 1 || loadingHeight > 300) {
+        this.setCustomValidity("Height must be between 1 and 300cm.");
     } else {
         this.setCustomValidity("");
     }
