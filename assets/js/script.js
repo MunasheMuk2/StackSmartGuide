@@ -1,13 +1,15 @@
 const calculateResult = document.getElementById("calculatePallet");
 const vehicle = document.getElementById('vanOutput');
 
-//Event listner added to calculate button as user inputs all details and clicks calculate to get recommended vehicle
+/*Event listner added to calculate button as user inputs all details
+ and clicks calculate to get recommended vehicle */
 
 calculateResult.addEventListener("click", calculateTotal);
 
 function calculateTotal() {
 
-    //Variables to retrieve elements from the pallet data html form and calculations from user inputs 
+    /*Variables to retrieve elements from the pallet data html form 
+    and calculations from user inputs */
 
     const palletNumberInput = document.getElementById('palletNumber').value;
     const loadingWeightInput = document.getElementById('loadingWeight').value;
@@ -32,7 +34,8 @@ function calculateTotal() {
     // totalOutput.innerHTML = industrialDimensions
 
 
-    //Object to store vehicle height and weight capacity and also the total number of pallets that can be loaded if pallets are non stackable. 
+    /*Object to store vehicle height and weight capacity and also the total
+    number of pallets that can be loaded if pallets are non stackable. */
 
     const vehicleLimits = {
         smallVan: {
@@ -90,10 +93,16 @@ function calculateTotal() {
         }
     };
 
-
     // Output result
-    //If statements based on selection of pallet type and user inputs of weight etc - else if applied to ensure the vehicle recommandation is based on the smallest vehicle that can take the total goods.
-    // eurodimensions /industrial dimension comparison limit set based on height of vehicles by calculating for example for europallet small van 120 x 80 x 110 (vehicle height). This way if pallets surpass 110cm height another vehicle is recommended.
+    /*If statements based on selection of pallet type
+    and user inputs of weight etc - else if applied to ensure 
+    the vehicle recommandation is based on the smallest 
+    vehicle that can take the total goods.*/
+
+    /* eurodimensions /industrial dimension comparison 
+    limit set based on height of vehicles by calculating for 
+    example for europallet small van 120 x 80 x 110 (vehicle height). 
+    This way if pallets surpass 110cm height another vehicle is recommended. */
 
 
     if (palletType === "euro" && euroDimensions <= 1056000 && palletsWeight <= vehicleLimits.smallVan.maxWeight &&
@@ -187,9 +196,12 @@ document.getElementById("palletNumber").addEventListener("input", palletError);
 function palletError() {
 
     let palletNumber = this.value;
-    //  reportValidity allows user to be notified error message if the if statement is false - code from developer.mozilla
+    /* reportValidity allows user to be notified error message if 
+    the if statement is false - code from developer.mozilla */
     if (palletNumber < 1 || palletNumber > 26) {
-        // setCustomValidity method used to enable customs validity message - code from developer.mozilla
+
+        /*  setCustomValidity method used to enable customs validity
+         message - code from developer.mozilla */
         this.setCustomValidity("Number of pallets must be between 1 and 26.");
     } else {
         this.setCustomValidity("");
@@ -215,17 +227,17 @@ function weightError() {
     let loadingWeight = this.value;
 
     if (loadingWeight < 1 || loadingWeight > 923.07) {
-        this.setCustomValidity("Loading weight must be between 1 and 923 kg.")
+        this.setCustomValidity("Loading weight must be between 1 and 923 kg.");
     } else {
         this.setCustomValidity(" ");
     }
     this.reportValidity();
 }
 
-
-//Code inside onclick function from stack overflow - to reset the page once the reset button is clicked 
+/* Code inside onclick function from stack overflow - 
+to reset the page once the reset button is clicked */
 
 function resetForm() {
-    // Add reset functionality here
+    // Add reset functionality 
     window.location.reload();
 }
