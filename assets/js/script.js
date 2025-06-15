@@ -167,7 +167,7 @@ function calculateTotal() {
         palletHeightInput <= vehicleLimits.twentySixTonne.maxHeight &&
         palletNumberInput <= vehicleLimits.twentySixTonne.maxPallets) {
         vehicle.innerHTML = "26 Tonne - 730 x 240 x 240cm";
-    } else if (palletType === "euro" && euroDimensions >= 2592000 && palletsWeight <= vehicleLimits.artic.maxWeight &&
+    } else if (palletType === "euro" && euroDimensions <= 2592000 && palletsWeight <= vehicleLimits.artic.maxWeight &&
         palletHeightInput <= vehicleLimits.artic.maxHeight &&
         palletNumberInput <= vehicleLimits.artic.maxPallets) {
         vehicle.innerHTML = "Artic - 1350 x 240 x 270cm";
