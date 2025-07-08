@@ -57,6 +57,30 @@ main {
 .paragraphs{
     text-align:center;
     font-size:14px;
+    width:85%;
+    margin:auto;
+    margin-bottom:1rem;
+}
+
+#calculator{
+    border-radius:5px;
+    padding:4px;
+    background-color:#2289e6;
+    color:white;
+    font-size:13px;
+    border:none;
+    margin-left:5rem;
+
+}
+
+#how{
+    border-radius:5px;
+    padding:4px;
+    border:none;
+    margin-left:1rem;
+    background-color:orange;
+    color:white;
+    font-size:13px;
 }
 
 .steps {
