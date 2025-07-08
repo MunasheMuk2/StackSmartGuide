@@ -59,6 +59,21 @@ main {
     font-size:14px;
 }
 
+.steps {
+    
+    margin:auto;
+    margin-top:2rem;
+    font-size:13px;
+    width:85%;
+    align-content:center;
+}
+
+.plane{
+margin-top:2rem;
+width:100%;
+
+}
+
 .form {
     width:100vh;
     margin:auto
