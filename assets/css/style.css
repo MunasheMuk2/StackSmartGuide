@@ -23,7 +23,7 @@ body{
 .logo{
 color:#2289e6;
 margin-top: 10px;
-margin-left:7px;
+margin-left:0px;
 margin-bottom:25px;
 }
 
@@ -95,7 +95,7 @@ main {
     
     margin:auto;
     margin-top:2rem;
-     margin-left:3rem;
+    margin-left:3rem;
     font-size:13px;
     width:85%;
     align-content:center;
@@ -129,31 +129,52 @@ width:100%;
 /* Buttons */
 
 #calculatePallet {
-    background-color:#2289e6;
+    background-color: white;
     padding:5px;
     width:250px;
     margin:auto;
-    margin-bottom:7px;
-    color:white;
-    border: 2px solid #2289e6;
+    margin-bottom:20px;
+    color:black;
+    border: 2px solid black;
+    border-radius:10px;
 }
 
 #resetButton{
-    border: 2px solid #2289e6;
+    border: 2px solid black;
     background-color:white;
     width:250px;
     margin:auto;
     padding:5px;
+    border-radius:10px;
     }
+
 
     /* Footer section */
 
 footer {
-    background-color:#2289e6;
+    display:flex;
+    flex-direction:column;
+    background-color:#F5F5F5;
     padding-left:10px;
-    color:white;
+    color:black;
+    /* border-top:2px solid black; */
     
     
+    
+}
+
+.socials{
+    display:flex;
+    justify-content:space-between;
+    flex-direction:row;
+    width:70%;
+    margin-bottom:1rem;
+    margin-top:1rem;
+
+}
+
+.socials a {
+    color:black;
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
