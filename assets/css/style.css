@@ -296,6 +296,8 @@ border-radius:10px;
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
 
+    /*Home page*/
+
     main {
         margin-top:50px;
     }
@@ -381,6 +383,33 @@ margin-top:3rem;
     footer{
         padding-top:5px;
         font-size:18px;
+    }
+
+    /*Vehicle guide page*/
+
+    .sizeguide {
+        font-size:35px
+    }
+
+    main {
+        margin-bottom:5rem;
+    }
+
+    /* Contact us page */
+
+    .sucess-header {
+        font-size:35px;
+
+    }
+
+    .sucess-paragraph{
+        font-size:20px;
+        margin-bottom:2rem;
+        margin-top:1rem;
+    }
+
+    #return {
+        
     }
 
 }
