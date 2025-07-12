@@ -223,6 +223,12 @@ float:left;
     margin-left:50px;
 }
 
+/* Vehicle Guide Page */
+
+.table{ 
+    width:90%;
+}
+
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
 
