@@ -259,6 +259,7 @@ display: block;
 
 .contact-header {
     margin-left:1rem;
+    margin-top:4rem;
 }
 
 .contact-form {
@@ -291,6 +292,26 @@ border-radius:10px;
     color:white;
     font-size:13px;
     text-decoration:none;
+}
+
+/* Contact us page */
+
+.contact-header {
+    margin-top:0rem;
+}
+
+.contact-form {
+    margin-top:3rem;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+.image-form-wrapper .plane {
+width:70%;
+margin:auto;
+}
+
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
