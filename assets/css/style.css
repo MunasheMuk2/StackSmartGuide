@@ -114,6 +114,10 @@ width:100%;
     margin: auto !important;
 }
 
+.palletCalculator label {
+    margin-top:5px;
+}
+
 #vanOutput {
     border: 1px solid black;
     border-color: orange;
