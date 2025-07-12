@@ -226,7 +226,9 @@ float:left;
 /* Vehicle Guide Page */
 
 .table{ 
-    width:90%;
+   table-layout:fixed;
+   overflow-x: auto;
+   display: block;
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
