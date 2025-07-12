@@ -259,12 +259,13 @@ display: block;
 
 .contact-header {
     margin-left:1rem;
-    margin-top:4rem;
+    margin-top:3rem !important;
 }
 
 .contact-form {
     width:90%;
     margin-left:1rem;
+    margin-bottom:1rem !important;
 }
 
 /* Success page */
