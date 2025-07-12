@@ -242,33 +242,23 @@ function resetForm() {
 
 /* Accordion*/
 
-// var acc = document.getElementsByClassName("accordion");
-// var i;
+// Code amended from W3schools 
 
-// for (i = 0; i < acc.length; i++) {
-//     acc[i].addEventListener("click", function () {
-//         this.classList.toggle("active");
-//         var panel = this.nextElementSibling;
-//         if (panel.style.display === "block") {
-//             panel.style.display = "none";
-//         } else {
-//             panel.style.dipslay = "block";
-//         }
-//     })
-// }
-
-// Select all elements with the class 'accordion'
-var accordionButtons = document.querySelectorAll(".accordion");
+var accordion = document.querySelectorAll(".accordion");
 
 // Loop through each button
-for (var i = 0; i < accordionButtons.length; i++) {
+for (i = 0; i < accordion.length; i++) {
+
     // Add a click event listener to the current button
-    accordionButtons[i].addEventListener("click", function () {
+
+    accordion[i].addEventListener("click", function () {
 
         // Toggle the 'active' class on the clicked button
+
         this.classList.toggle("active");
 
-        // Find the corresponding panel (next sibling)
+        //Toggle onto the next active panel
+
         var panel = this.nextElementSibling;
 
         // Toggle panel visibility based on current display value
@@ -277,5 +267,6 @@ for (var i = 0; i < accordionButtons.length; i++) {
         } else {
             panel.style.display = "block";
         }
-    });
+    })
+
 }
