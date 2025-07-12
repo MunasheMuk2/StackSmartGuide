@@ -71,19 +71,27 @@ main {
     color:white;
     font-size:13px;
     border:none;
-    margin-left:5rem;
     text-decoration:none;
+    
 }
 
 .scroll-button2{
     border-radius:10px;
     padding:5px;
     border:none;
-    margin-left:1rem;
     background-color:orange;
     color:white;
     font-size:13px;
     text-decoration:none;
+}
+
+.scroll-buttons {
+display: flex;
+justify-content: center; 
+align-items: center;
+gap: 1rem; /* Adds space between buttons */
+margin-top: 1rem;
+
 }
 
 .steps {
@@ -226,9 +234,9 @@ float:left;
 /* Vehicle Guide Page */
 
 .table{ 
-   table-layout:fixed;
-   overflow-x: auto;
-   display: block;
+table-layout:fixed;
+overflow-x: auto;
+display: block;
 }
 
 .sizeguide{
@@ -256,6 +264,32 @@ float:left;
     margin-left:1rem;
 }
 
+/* Success page */
+
+.success {
+    width:85%;
+    margin-top:5rem;
+    margin-left:2rem;
+}
+
+.sucess-header{
+    font-size:35px
+}
+.sucess-paragraph {
+    margin-top:2rem;
+    font-size:15px;
+}
+
+.home {
+border-radius:10px;
+    padding:5px;
+    border:none;
+
+    background-color:orange;
+    color:white;
+    font-size:13px;
+    text-decoration:none;
+}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
