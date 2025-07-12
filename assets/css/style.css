@@ -148,6 +148,13 @@ width:100%;
     border-radius:10px;
     }
 
+.faq{
+    background:orange;
+    font-size:11px;
+    margin-left:1px;
+    margin-bottom:2rem;
+}
+
 /* For background color to buttons when clicked (added the .active class with JS) */
 .active, .accordion:hover {
   background-color: #ccc;}
@@ -156,15 +163,15 @@ width:100%;
     border:none;
     background-color:orange;
     width:100%;
+    text-align:left;
+
   }
 
   .panel{
     display:none;
   }
 
-  #third{
-    margin-bottom:2rem
-  }
+
 
   /* code amended from W3schools */
 
