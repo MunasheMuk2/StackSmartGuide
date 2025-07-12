@@ -20,13 +20,6 @@ body{
     margin:auto !important
 }
 
-.logo{
-color:#2289e6;
-margin-top: 10px;
-margin-left:0px;
-margin-bottom:25px;
-float:left;
-}
 
 /* to change the 'smartguide' in the logo to orange */
 #orange {
@@ -158,19 +151,19 @@ width:100%;
 
 /* For background color to buttons when clicked (added the .active class with JS) */
 .active, .accordion:hover {
-  background-color: #ccc;}
+background-color: #ccc;}
 
-  .accordion {
+.accordion {
     border:none;
     background-color:orange;
     width:100%;
     text-align:left;
 
-  }
+}
 
-  .panel{
+.panel{
     display:none;
-  }
+}
 
 
 
@@ -178,14 +171,19 @@ width:100%;
 
 .accordion::after {
   content: "+"; /* To show plus sign originally */
-  float: right;
-  margin-left: 10px;
-  font-size: 20px;
+float: right;
+margin-left: 10px;
+font-size: 20px;
 }
 
 /* When active */
 .accordion.active::after {
   content: "−"; /* Changes to minus when clicked due to the function in javascript */
+}
+
+.truck {
+margin-top:0.5rem;
+width:100%;
 }
 
 
@@ -198,9 +196,11 @@ footer {
     padding-left:10px;
     color:black;
     /* border-top:2px solid black; */
-    
-    
-    
+}
+
+.logo{
+color:#2289e6;
+float:left;
 }
 
 .socials{
@@ -215,6 +215,7 @@ footer {
 
 .socials a {
     color:black;
+    margin-left:50px;
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
