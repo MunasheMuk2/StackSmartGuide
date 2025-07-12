@@ -68,7 +68,6 @@
 
     <!--Buttons to scroll to section on main page-->
     <div class="scroll-buttons">
-
       <a href="#palletData" class="scroll-button">Go To Calculator </a>
       <a href="#how" class="scroll-button2"> How It Works </a>
     </div>
@@ -96,40 +95,44 @@
 
       </p>
 
-      <img class="plane" src="assets\images\planes.jpg" />
+
 
     </section>
 
+    <div class="image-form-wrapper">
+      <img class="plane" src="assets\images\pallettruck.jpg" />
 
-    <!-- Form heading and paragraph  -->
-    <h2 class="headers" id="palletData">Pallet Data </h2>
-    <p class="paragraphs" id="dataparagraph"> Dimensions in cm - vehicle recommendation based on pallets being
-      non-stack. </p>
-    <!-- Form container -->
-    <fieldset class="palletCalculator">
-      <!-- Pallet amount input -->
-      <label for="palletNumber">Number of pallets:</label>
-      <input type="number" id="palletNumber" min="1" max="26">
-      <!-- Pallet height input -->
-      <label for="loadingHeight">Pallet Height (per pallet cm):</label>
-      <input type="number" id="loadingHeight">
-      <!-- Pallet weight input -->
-      <label for="loadingWeight"> Weight per pallet (kg):</label>
-      <input type="number" id="loadingWeight">
-      <!-- Pallet type select input -->
-      <label for="palletType">Select Pallet Type:</label>
-      <select id="palletType">
-        <option id="euro" value="euro"> Europallet 120 x 80 cm</option>
-        <option id="industrial" value="industrial">Industrial pallet 120 x 100 cm</option>
-      </select>
-      <!-- vehicle recommendation output -->
-      <p id="vanOutput">Vehicle recommendation:</p>
-      <!-- Buttons -->
-      <button id="calculatePallet">Caculate </button>
-      <button id="resetButton" onclick="resetForm()" value="Reset">Reset</button>
-      <br>
+      <!-- Form heading and paragraph  -->
+      <h2 class="headers" id="palletData">Pallet Data </h2>
+      <p class="paragraphs" id="dataparagraph"> Dimensions in cm - vehicle recommendation based on pallets being
+        non-stack. </p>
+      <!-- Form container -->
+      <fieldset class="palletCalculator">
+        <!-- Pallet amount input -->
+        <label for="palletNumber">Number of pallets:</label>
+        <input type="number" id="palletNumber" min="1" max="26">
+        <!-- Pallet height input -->
+        <label for="loadingHeight">Pallet Height (per pallet cm):</label>
+        <input type="number" id="loadingHeight">
+        <!-- Pallet weight input -->
+        <label for="loadingWeight"> Weight per pallet (kg):</label>
+        <input type="number" id="loadingWeight">
+        <!-- Pallet type select input -->
+        <label for="palletType">Select Pallet Type:</label>
+        <select id="palletType">
+          <option id="euro" value="euro"> Europallet 120 x 80 cm</option>
+          <option id="industrial" value="industrial">Industrial pallet 120 x 100 cm</option>
+        </select>
+        <!-- vehicle recommendation output -->
+        <p id="vanOutput">Vehicle recommendation:</p>
+        <!-- Buttons -->
+        <button id="calculatePallet">Caculate </button>
+        <button id="resetButton" onclick="resetForm()" value="Reset">Reset</button>
+        <br>
 
-    </fieldset>
+      </fieldset>
+    </div>
+
     <div class="faq">
 
       <h2>FAQ </h2>
