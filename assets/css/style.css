@@ -64,6 +64,17 @@ main {
     margin-bottom:1rem;
 }
 
+.scroll-button {
+    border-radius:10px;
+    padding:5px;
+    background-color:#2289e6;
+    color:white;
+    font-size:13px;
+    border:none;
+    margin-left:5rem;
+    text-decoration:none;
+}
+
 #calculator{
     border-radius:10px;
     padding:5px;
@@ -75,7 +86,7 @@ main {
 
 }
 
-#how{
+.scroll-button2{
     border-radius:10px;
     padding:4px;
     border:none;
@@ -83,6 +94,7 @@ main {
     background-color:orange;
     color:white;
     font-size:13px;
+    text-decoration:none;
 }
 
 .steps {
