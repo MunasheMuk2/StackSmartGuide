@@ -50,23 +50,27 @@
 <body>
     <!-- Main -->
     <main>
-        <h1> Contact Us </h1>
-        <form>
+        <h1 class="contact-header"> Contact Us </h1>
+        <!--Form from bootstrap-->
+        <form class="contact-form">
             <div class="row">
                 <div class="col">
-                    <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+                    <input type="text" class="form-control border border-dark" placeholder="First name"
+                        aria-label="First name">
                 </div>
                 <div class="col">
-                    <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+                    <input type="text" class="form-control border border-dark" placeholder="Last name"
+                        aria-label="Last name">
                 </div>
-            </div>
+            </div> <br>
             <div class="mb-3">
                 <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                <input type="email" class="form-control border border-dark" id="exampleFormControlInput1"
+                    placeholder="name@gmail.com">
             </div>
             <div class="mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                <textarea class="form-control border border-dark" id="exampleFormControlTextarea1" rows="3"></textarea>
             </div>
             <div class="col-auto">
                 <button type="submit" class="btn btn-primary">Submit</button>

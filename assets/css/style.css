@@ -245,6 +245,13 @@ float:left;
     margin:auto
 }
 
+/* Contact us page */
+
+.contact-form {
+    width:90%;
+    margin-left:1rem;
+}
+
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
 
