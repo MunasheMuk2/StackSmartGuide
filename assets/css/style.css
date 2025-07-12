@@ -155,7 +155,7 @@ width:100%;
   .accordion {
     border:none;
     background-color:orange;
-    width:100%
+    width:100%;
   }
 
   .panel{
@@ -167,18 +167,17 @@ width:100%;
   }
 
   /* code amended from W3schools */
-  
+
 .accordion::after {
   content: "+"; /* To show plus sign originally */
   float: right;
   margin-left: 10px;
   font-size: 20px;
-  transition: transform 0.3s ease;
 }
 
 /* When active */
 .accordion.active::after {
-  content: "−"; /* Minus when open */
+  content: "−"; /* Changes to minus when clicked due to the function in javascript */
 }
 
 
