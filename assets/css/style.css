@@ -247,10 +247,15 @@ float:left;
 
 /* Contact us page */
 
+.contact-header {
+    margin-left:1rem;
+}
+
 .contact-form {
     width:90%;
     margin-left:1rem;
 }
+
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
