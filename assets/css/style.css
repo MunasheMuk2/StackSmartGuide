@@ -357,6 +357,16 @@ margin-top:3rem;
         height:45px;
     }
 
+    .faq{
+       margin-top:2rem;
+       width:85%;
+       margin-left:8rem;
+    }
+
+    /* .accordion {
+        text-align:center;
+    } */
+
     footer{
         padding-top:5px;
         font-size:18px;
