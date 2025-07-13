@@ -13,7 +13,7 @@ function calculateTotal() {
 
     const palletNumberInput = document.getElementById('palletNumber').value;
     const loadingWeightInput = document.getElementById('loadingWeight').value;
-    const palletsWeight = palletNumberInput * loadingWeightInput
+    const palletsWeight = palletNumberInput * loadingWeightInput;
 
     //To change the calculation based on whether the user selects "euro" or "industrial"
 
@@ -245,6 +245,7 @@ function resetForm() {
 // Code amended from W3schools 
 
 var accordion = document.querySelectorAll(".accordion");
+var i;
 
 // Loop through each button
 for (i = 0; i < accordion.length; i++) {
@@ -267,6 +268,6 @@ for (i = 0; i < accordion.length; i++) {
         } else {
             panel.style.display = "block";
         }
-    })
+    });
 
 }

@@ -15,6 +15,10 @@ The site can be accessed by this [link](https://munashemuk2.github.io/StackSmart
 
 The site makes freight planning easier for logistics professionals as the guide suggests the ideal vehicle size based on the cargo they will be transporting.  In return, their planning will be more efficient, ensures safe transportation as goods will not be overloaded over the vehicle weight capacity and they will choose the right vehicle that fits all goods which reduces costs of sending replacement vehicles to their clients due to miscalculation errors. 
 
+### Planning 
+
+Defined the core purpose: smart stacking and vehicle recommendation.Outlined key pages: Home, Vehicle Guide, Contact. Identified target users: logistics professionals
+
 ### Core Site Formula applied in JavaScript
 
  ### How to Determine if Pallets Fit in a Vehicle
@@ -137,9 +141,16 @@ _Frequent users_
 
 4. Performed manual walkthroughs replicating real user scenarios—changing pallet types, submitting form, reading output.
 
+5. Manually Tested website functionality by using the site as an end user. This involved entering various input combinations into the form fields, triggering the calculateTotal() function via the ‘Calculate’ button and ensuring that the vehicle recommendation output appeared correctly from the vanOutput element. 
+
+
 ### Unsolved bugs
 
 1. On the vehicle guide page the main header was appearing lower on the page and could not push it updwards by attempting to add margin. As the space at the top is only small I left the header as it is. 
+
+### Future development 
+
+Future development will focus on optimizing the functionality of the pallet calculator so it can calculate stackable pallets and provide vehicle recommendation based on manual length and width input. 
 
 ---
 ## Design
