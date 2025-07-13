@@ -163,12 +163,110 @@ _Frequent users_
 
 - [Wireframe link](https://www.canva.com/design/DAGsg5tEPug/F1DLTwL4BDx1LUsQqJEtiQ/edit)
 
+### Wireframe Reasoning 
+
+1. The wireframe prioritizes clarity and usability, ensuring users can quickly understand the purpose of the Smart Pallet Calculator.
+
+2. Input fields on the pallet calculator form/contant us page are logically grouped to guide the user through step-by-step data entry
+
+3. The calculate and reset button on home page and submit button on contact us page are positioned to reinforce final action after data is entered
+
+4. Images added on the vehicle guide page as an aid to indicate vehicle sizes in each section 
+
 
 ---
 
 ## Testing
 
 Please refer to the [TESTING.md](testing.md) file for all test-related information 
+
+## Compatibility
+
+In order to confirm the correct functionality, responsiveness, and appearance:
+
++ The website was tested on popular browsers : Chrome and Microsoft edge
+
+    - Chrome:
+
+    ![Chrome](screenshots/chrome.jpg)
+
+     - Microsoft Edge:
+
+    ![Microsoft Edge](screenshots/MicrosoftEdge.jpg)
+
+---
+
+## Responsiveness
+
+
++ Also checked the website's responsiveness in devtools - Chrome.
+
+    - Extra small devices:
+
+    ![XS devices](screenshots/xs-devices.jpg)
+
+    ---
+
+    - Small devices:
+
+    ![Small devices](screenshots/smalldevices.jpg)
+
+    ---
+
+    - Medium devices:
+
+    ![Medium devices](screenshots/medium-devices.jpg)
+
+    ---
+    
+     - large/Xl devices:
+
+    ![Extra large devices](screenshots/largexl.jpg)
+---
+## Manual testing
+
+| feature | action | expected result | tested | passed | comments |
+| --- | --- | --- | --- | --- | --- |
+| Pallet Data Form | | | | | |
+| Number of pallets input | Enter number | number is displayed | Yes | Yes | - |
+| Pallet height input | Enter number | number is displayed | Yes | Yes | - |
+| Weight per pallet input | Enter number | number is displayed | Yes | Yes | - |
+| Select pallet type | Select one of the 2 predifined pallet types  | pallet type is displayed | Yes | Yes | - |
+| Buttons | | | | | |
+| Calculate button | Click on the calculate button | An output of a vehicle recommendation is displayed | Yes | Yes | - |
+| Reset button| Click on the reset button| The pallet data form refreshes all numbers entered by user are reset | Yes | Yes | - |
+---
+
+## Validator testing
++ ### HTML
+  #### Landing Page
+   
+    ![Landing Page HTML Validator](screenshots/htmlvalidator.jpg)
+
+     - No errors or warnings were found when passing through the official W3C validator.
+
+    
++ ### CSS
+  No errors or warnings were found when passing through the official W3C (Jigsaw) validator 
+    ![CSS](screenshots/cssvalidator.jpg)
+
+ ---
+
++ ## LightHouse report
+
+    - Lighthouse in devtools confirmed the site has optimal perfoamce. See below: 
+    
+  ### Home page
+
+  ![Landing Page Lighthouse](screenshots/lighthouse.jpg)
+
+---
+
++ ### JSHint
+
+ No errors or warnings were found when passing through the JS code in JSHint. Only  warnings indicating that the version of JSHint does not support key word 'const' as  this is supported Javascript version ES6. Also reset form indicated as unused variable but it is used to to reset pallet calculator form.
+
+   ![JSHint](screenshots/jshint.jpg)
 
 ---
 
