@@ -125,6 +125,18 @@ _Frequent users_
 
 2. The site buttons were not working on the page when trying to add an event listener for clicks in a form. Resolved this by taking out the form tags and putting the form data in a div container instead.
 
+3. The two buttons on the home page were not staying in one position when screen size changed so placed them in a div and used flex box 
+
+### Testing
+
+1. Deployed the site early so I could catch deployment specific bugs early on live site 
+
+2. Verified that all UI elements ( buttons, form inputs, accordion) operate as expected.
+
+3. Confirmed vehicle recommendation logic runs correctly with varied pallet types, dimensions, and weight inputs.
+
+4. Performed manual walkthroughs replicating real user scenarios—changing pallet types, submitting form, reading output.
+
 ---
 ## Design
 
