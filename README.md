@@ -99,8 +99,10 @@ _Frequent users_
 
     ![Home Page](screenshots/landingpage.jpg)
 
-        * Guide introduction with steps on how to use the guide 
+        * Guide introduction with steps on how to use the pallet calculator 
+        * Buttons to scroll to page sections
         * Form with inputs/ select options to collect data for vehicle recommendation 
+        * Max and min amount notifications on the input options
         * Calculate button to show results based on user inputs and reset button to bring form back to its initial state and allow user to fill in new information 
 
 ---
@@ -117,6 +119,7 @@ _Frequent users_
 - [If else statements](https://www.shecodes.io) - Used to Access Properties Inside an Object for If Else Statements
 - [VSCode](https://code.visualstudio.com/)  Used as the main code editor
 - [GitHub](https://github.com/) code host for the site
+- [W3schools](https://www.w3schools.com/howto/howto_js_accordion.asp) - Used to assist with how to make a collapsable accordion.
 - Code institute tutorials for understanding how to access elements in the DOM through JavaScript
 ---
 
