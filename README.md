@@ -109,7 +109,7 @@ _Frequent users_
 
 + #### Footer
 
-    - Footer contains a contact email and number to allow users to report issues and ask questions on how to effectively use the guide
+    - Footer contains the stack smart guide logo and also social media links through icons so users stay connected.
 ​
     ![Footer](screenshots/footer.jpg)
 ​
