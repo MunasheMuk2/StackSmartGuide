@@ -149,7 +149,7 @@ _Frequent users_
 
 #### Mobile/Tablets/Desktop devices
 
-- [Wireframe link](https://www.canva.com/design/DAGmeM5WMKw/qqw3YJhy_F9eNF_7kvYZpQ/edit)
+- [Wireframe link](https://www.canva.com/design/DAGsg5tEPug/F1DLTwL4BDx1LUsQqJEtiQ/edit)
 
 
 ---
