@@ -22,7 +22,7 @@ body{
 
 
 /* to change the 'smartguide' in the logo to orange */
-#orange {
+.orange {
     color:orange;
 }
 
