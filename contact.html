@@ -52,15 +52,15 @@
     <main>
         <h1 class="contact-header"> Contact Us </h1>
         <!--Form from bootstrap-->
-        <form action="success.html" class="contact-form">
+        <form method="POST" action="success.html" class="contact-form">
             <div class="row">
                 <div class="col">
-                    <input type="text" class="form-control border border-dark" placeholder="First name"
-                        aria-label="First name">
+                    <input type="text" name="firstName" id="first-name" class="form-control border border-dark"
+                        placeholder="First name" aria-label="First name">
                 </div>
                 <div class="col">
-                    <input type="text" class="form-control border border-dark" placeholder="Last name"
-                        aria-label="Last name">
+                    <input type="text" name="lastName" id="last-name" class="form-control border border-dark"
+                        placeholder="Last name" aria-label="Last name">
                 </div>
             </div> <br>
             <div class="mb-3">

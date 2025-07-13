@@ -137,6 +137,10 @@ _Frequent users_
 
 4. Performed manual walkthroughs replicating real user scenarios—changing pallet types, submitting form, reading output.
 
+### Unsolved bugs
+
+1. On the vehicle guide page the main header was appearing lower on the page and could not push it updwards by attempting to add margin. As the space at the top is only small I left the header as it is. 
+
 ---
 ## Design
 
