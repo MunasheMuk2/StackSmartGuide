@@ -103,9 +103,6 @@ _Frequent users_
         * Form with inputs/ select options to collect data for vehicle recommendation 
         * Calculate button to show results based on user inputs and reset button to bring form back to its initial state and allow user to fill in new information 
 
-
-  
-
 ---
 
 + #### Footer
