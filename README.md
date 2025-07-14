@@ -107,6 +107,39 @@ _Frequent users_
 
 ---
 
++ ### Vehicle guide Page
+
+    - Features: 
+
+    ![Vehicle guide Page](screenshots/vehicleguidepage.jpg)
+
+        * Vehicle Cards showcasing images, van types, and classification
+        * Technical Specs including volume capacity, payload limits, and bed dimensions.
+
+---
+
++ ### Contact us Page
+
+    - Features: 
+
+    ![Contact us Page](screenshots/contactuspage.jpg)
+
+        * Structured Contact Form requesting user details
+        *  The form also includes a submit button to send user-provided contact information.
+
+---
+
++ ### Contact us success Page
+
+    - Features: 
+
+    ![Contact us success Page](screenshots/successpage.jpg)
+
+        *  Confirmation Message thanking users for getting in touch and reinforcing that their inquiry was received.
+        *  Return to Home” Button enabling  navigation back to the landing page.
+
+---
+
 + #### Footer
 
     - Footer contains the stack smart guide logo and also social media links through icons so users stay connected.
