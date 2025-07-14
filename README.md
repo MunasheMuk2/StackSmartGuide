@@ -338,11 +338,11 @@ In order to confirm the correct functionality, responsiveness, and appearance:
 ### Deployment to GitHub Pages
 
 - The site was deployed to GitHub pages. Using the following steps: 
-  - In the [GitHub repository](https://github.com/MunasheMuk2/StackSmartGuide), clicked on the Settings tab 
+  - In the [GitHub repository](https://github.com/MunasheMuk2/StackSmartGuide), clicked on the Settings tab.
   - Selected the main branch under default branch and clicked on code 
   - Under deployments was a ribbon display to indicate the successful deployment.
 
-The live link can be found [here](https://munashemuk2.github.io/StackSmartGuide/)
+The live link can be found [here](https://munashemuk2.github.io/StackSmartGuide/).
 
 ### Local Deployment
 
