@@ -85,11 +85,12 @@ _Frequent users_
 
 ## Features
 
-+ ### Logo
++ ### Navigation bar and Logo
 
     - Placed at the top of the page is the company logo "StackSmartGuide" on the left and also in the nav bar bottom left.
+    - The navigation bar also has all the site pages (on mobile the nav bar changes to a dropdown burger icon )
 
-    ![Logo](screenshots/logo.jpg)
+    ![Nav bar](screenshots/logo.jpg)
 
 ---
 
