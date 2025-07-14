@@ -93,7 +93,7 @@ _Frequent users_
 
 ---
 
-+ ### Home Page
++ ### Home page
 
     - Features: 
 
@@ -107,7 +107,7 @@ _Frequent users_
 
 ---
 
-+ ### Vehicle guide Page
++ ### Vehicle guide page
 
     - Features: 
 
@@ -118,7 +118,7 @@ _Frequent users_
 
 ---
 
-+ ### Contact us Page
++ ### Contact us page
 
     - Features: 
 
@@ -129,7 +129,7 @@ _Frequent users_
 
 ---
 
-+ ### Contact us success Page
++ ### Contact us success page
 
     - Features: 
 
