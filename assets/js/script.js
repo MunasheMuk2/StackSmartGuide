@@ -235,6 +235,8 @@ function weightError() {
 /* Code inside onclick function from stack overflow - 
 to reset the page once the reset button is clicked */
 
+document.getElementById("resetButton").addEventListener("click", resetForm);
+
 function resetForm() {
     // Add reset functionality 
     window.location.reload();

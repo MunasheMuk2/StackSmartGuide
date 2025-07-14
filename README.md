@@ -8,7 +8,7 @@ The site can be accessed by this [link](https://munashemuk2.github.io/StackSmart
 
 ### Target audience:
 
-- Transportation planners and freight forwarders 
+- Logistics transportation planners and freight forwarders 
 
 
 ### Purpose and Value of Stack Smart Guide to users: 
@@ -17,7 +17,7 @@ The site makes freight planning easier for logistics professionals as the guide 
 
 ### Planning 
 
-Defined the core purpose: smart stacking and vehicle recommendation.Outlined key pages: Home, Vehicle Guide, Contact. Identified target users: logistics professionals
+Defined the core purpose: smart vehicle recommendation.Outlined key pages: Home, Vehicle Guide, Contact. Identified target users: logistics professionals
 
 ### Core Site Formula applied in JavaScript
 
@@ -69,7 +69,7 @@ _First time visitors_
 
 2. As a logistics professional I want key dimensions unit inputs that ensure the correct sized vehicle is recommended 
 
-3. As a logistics professional I want to see Stack Smart Guide’s contact details in case I have any questions on how to use the guide tool 
+3. As a logistics professional I want to see Stack Smart Guide’s social links in case I need further information from their logistics community on how to use the guide tool etc
 
 _Returning visitors_
 
@@ -77,7 +77,7 @@ _Returning visitors_
 
 2. As a logistics professional, I want to see updated features 
 
-3.	As a logistics professional, professional I want to see Stack Smart Guide’s contact details in case there are any issues with the calculator
+3.	As a logistics professional, professional I want to be able to contact Stack Smart Guide in case there are any issues with the calculator
 
 _Frequent users_
 
@@ -114,7 +114,7 @@ _Frequent users_
     ![Vehicle guide Page](screenshots/vehicleguidepage.jpg)
 
         * Vehicle Cards showcasing images, van types, and classification
-        * Technical Specs including volume capacity, payload limits, and bed dimensions.
+        * Technical Specs including volume capacity, payload limits, and vehicle dimensions.
 
 ---
 
@@ -124,8 +124,8 @@ _Frequent users_
 
     ![Contact us Page](screenshots/contactuspage.jpg)
 
-        * Structured Contact Form requesting user details
-        *  The form also includes a submit button to send user-provided contact information.
+        * Contact Form requesting user details.
+        * The form also includes a submit button to send user-provided contact information.
 
 ---
 
@@ -166,7 +166,7 @@ _Frequent users_
 
 ### Testing
 
-1. Deployed the site early so I could catch deployment specific bugs early on live site 
+1. Deployed the site early so I could catch deployment specific bugs early 
 
 2. Verified that all UI elements ( buttons, form inputs, accordion) operate as expected.
 
@@ -179,11 +179,7 @@ _Frequent users_
 
 ### Unsolved bugs
 
-1. On the vehicle guide page the main header was appearing lower on the page and could not push it updwards by attempting to add margin. As the space at the top is only small I left the header as it is. 
-
-### Future development 
-
-Future development will focus on optimizing the functionality of the pallet calculator so it can calculate stackable pallets and provide vehicle recommendation based on manual length and width input. 
+1. On the vehicle guide page the main header is appearing lower than it should without any CSS at the start of the page and could not push it updwards by attempting to add margin. As the space at the top is only small I left the header as it is. 
 
 ---
 ## Design
@@ -219,14 +215,12 @@ Future development will focus on optimizing the functionality of the pallet calc
 
 3. The calculate and reset button on home page and submit button on contact us page are positioned to reinforce final action after data is entered
 
-4. Images added on the vehicle guide page as an aid to indicate vehicle sizes in each section 
+4. Images added on the vehicle guide page work as an aid to indicate vehicle sizes in each section 
 
 
 ---
 
 ## Testing
-
-Please refer to the [TESTING.md](testing.md) file for all test-related information 
 
 ## Compatibility
 
@@ -283,6 +277,15 @@ In order to confirm the correct functionality, responsiveness, and appearance:
 | Buttons | | | | | |
 | Calculate button | Click on the calculate button | An output of a vehicle recommendation is displayed | Yes | Yes | - |
 | Reset button| Click on the reset button| The pallet data form refreshes all numbers entered by user are reset | Yes | Yes | - |
+| Contact us Form | | | | | |
+| First name input | Enter first name | first name is displayed | Yes | Yes | - |
+| Last name input | Enter last name | last name is displayed | Yes | Yes | - |
+| Email address input | Enter email address | email address is displayed | Yes | Yes | - |
+| Message input | Enter message | message is displayed | Yes | Yes | - |
+| Buttons | | | | | |
+| Submit button | Click on the submit button | User redirected to contact us sucess page | Yes | Yes | User gets notification message received |
+| Contact us sucess Page | | | | | |
+| Return to home button | Click on the return to home button | User redirected to home page | Yes | Yes | - |
 ---
 
 ## Validator testing
@@ -290,25 +293,25 @@ In order to confirm the correct functionality, responsiveness, and appearance:
 
   #### Landing Page
    
-    ![Landing Page HTML Validator](screenshots/htmlvalidator.jpg)
+    ![Landing Page HTML Validator](screenshots/htmlvalidator.jpg).
 
      - No errors or warnings were found when passing through the official W3C validator.
 
       #### Vehicle guide Page
    
-    ![Vehicle guide Page HTML Validator](screenshots/vehicleguidevalidator.jpg)
+    ![Vehicle guide Page HTML Validator](screenshots/vehicleguidevalidator.jpg).
 
      - No errors or warnings were found when passing through the official W3C validator.
 
      #### Contact us Page
    
-    ![Contact us Page HTML Validator](screenshots/contactusvalidator.jpg)
+    ![Contact us Page HTML Validator](screenshots/contactusvalidator.jpg).
 
      - No errors or warnings were found when passing through the official W3C validator.
 
  #### Contact sucess Page
    
-   ![Contact sucess Page HTML Validator](screenshots/successvalidator.jpg)
+   ![Contact sucess Page HTML Validator](screenshots/successvalidator.jpg).
 
      - No errors or warnings were found when passing through the official W3C validator.
 
@@ -321,19 +324,9 @@ In order to confirm the correct functionality, responsiveness, and appearance:
 
  ---
 
-+ ## LightHouse report
-
-    - Lighthouse in devtools confirmed the site has optimal perfoamce. See below: 
-    
-  ### Home page
-
-  ![Landing Page Lighthouse](screenshots/lighthouse.jpg)
-
----
-
 + ### JSHint
 
- No errors or warnings were found when passing through the JS code in JSHint. Only  warnings indicating that the version of JSHint does not support key word 'const' as  this is supported Javascript version ES6. Also reset form indicated as unused variable but it is used to to reset pallet calculator form.
+ No errors or warnings were found when passing through the JS code in JSHint. Only  warnings indicating that the version of JSHint does not support key word 'const' as  this is supported Javascript version ES6. 
 
    ![JSHint](screenshots/jshint.jpg)
 
@@ -361,8 +354,8 @@ In order to make a local copy of this project clone it in your IDE Terminal usin
 ---
 
 ## Future improvements
-- Add more pallet types to the select options  
-- Allow users to manually type in their pallet length and width
+
+Future development will focus on optimizing the functionality of the pallet calculator so it can calculate stackable pallets and provide vehicle recommendation based on manual length and width input. 
 
 ---
 
