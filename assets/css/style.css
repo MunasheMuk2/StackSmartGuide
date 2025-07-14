@@ -345,6 +345,25 @@ margin:auto;
         margin-top:20px;
     }
 
+    .scroll-button {
+    border-radius:10px;
+    padding:5px;
+    background-color:#2289e6;
+    color:white;
+    font-size:13px;
+    border:none;
+    text-decoration:none;
+    
+}
+
+.scroll-button2{
+    padding:9px;
+}
+
+.scroll-button {
+padding:9px;
+}
+
     .steps{
         font-size:15px;
     }
