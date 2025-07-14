@@ -87,7 +87,7 @@ _Frequent users_
 
 + ### Logo
 
-    - Placed at the top of the page is the company logo "StackSmartGuide" on the left
+    - Placed at the top of the page is the company logo "StackSmartGuide" on the left and also in the nav bar bottom left.
 
     ![Logo](screenshots/logo.jpg)
 
